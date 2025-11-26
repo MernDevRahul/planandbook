@@ -1,41 +1,45 @@
 // Responsive Footer Component
-// Mobile: stacked columns, optional accordion behavior
-"use client"
+"use client";
 import React, { useState } from "react";
 import { ChevronDown, ChevronUp } from "lucide-react";
 
 const Section = ({ title, items }) => {
   const [open, setOpen] = useState(false);
+
   return (
-    <div className="mb-4 lg:mb-0">
+     <div className="border border-white/20 bg-[#112023] rounded-md lg:border-none lg:bg-transparent mt-2">
+      {/* TITLE */}
       <button
         onClick={() => setOpen(!open)}
-        className="w-full flex justify-between items-center lg:cursor-default"
+        className="w-full flex justify-between items-center lg:cursor-default px-2 py-2"
       >
-        <h2 className="mb-2 text-white text-[18px] font-medium leading-[27px] w-max">
-          {title}
-        </h2>
+        <h2 className="text-white text-[18px] font-medium">{title}</h2>
+
+        {/* Chevron */}
         <span className="lg:hidden text-white">
           {open ? <ChevronUp /> : <ChevronDown />}
         </span>
       </button>
 
-      <ul
-        className={`no-underline font-normal text-[14px] leading-4 text-[#ababab] overflow-hidden transition-all duration-300 lg:block ${
+      {/* CONTENT */}
+      <div
+        className={`overflow-hidden transition-all duration-300 lg:block ${
           open ? "max-h-96" : "max-h-0 lg:max-h-none"
         }`}
       >
-        {items.map((item, i) => (
-          <li
-            key={i}
-            className="h-[30px] w-max text-[#ababab] font-normal text-[15px] leading-[22px] cursor-pointer"
-          >
-            <a href="" className="no-underline">
-              {item}
-            </a>
-          </li>
-        ))}
-      </ul>
+        <ul className="px-2 pb-2 space-y-2">
+          {items.map((item, i) => (
+            <li
+              key={i}
+              className="text-[#ababab] font-normal text-[15px] leading-[22px] cursor-pointer w-max"
+            >
+              <a href="#" className="no-underline">
+                {item}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
     </div>
   );
 };
@@ -44,28 +48,51 @@ export default function Footer() {
   return (
     <div className="bg-(--primary) rounded-md pt-4">
       <div className="bg-[#112023] lg:pt-[30px] lg:px-[151px] text-white px-4">
+
         {/* Top Section */}
         <div className="flex justify-center pb-6">
-          <div className="w-full lg:w-[80%] border-b border-white/20 pb-4 grid grid-cols-1 lg:grid-cols-4 gap-5">
+          <div className="w-full lg:w-[80%] border-b border-white/20 pb-4 grid grid-cols-1 lg:grid-cols-4 lg:gap-5">
+
             <Section
               title="International Trips"
-              items={["Europe", "Bali", "Vietnam", "Thailand", "Kazakhsthan", "Singapore", "Maldives", "Dubai", "Malaysia"]}
+              items={[
+                "Europe", "Bali", "Vietnam", "Thailand", "Kazakhsthan",
+                "Singapore", "Maldives", "Dubai", "Malaysia"
+              ]}
             />
 
             <Section
               title="India Trips"
-              items={["Ladakh", "Spiti", "Meghalaya", "Kashmir", "Himachal Pradesh", "Andaman", "Kerala", "Rajasthan", "Nagaland"]}
+              items={[
+                "Ladakh", "Spiti", "Meghalaya", "Kashmir", "Himachal Pradesh",
+                "Andaman", "Kerala", "Rajasthan", "Nagaland"
+              ]}
             />
 
             <Section
               title="Special Package"
-              items={["Community Trips", "Homeymoon Trips", "Corporate Trips", "Weekend Getaways"]}
+              items={[
+                "Community Trips",
+                "Homeymoon Trips",
+                "Corporate Trips",
+                "Weekend Getaways"
+              ]}
             />
 
             <Section
               title="Quick Links"
-              items={["About us", "Privacy Policy", "Terms & Conditions", "Support", "Disclaimer", "Careers", "Blogs", "Payments"]}
+              items={[
+                "About us",
+                "Privacy Policy",
+                "Terms & Conditions",
+                "Support",
+                "Disclaimer",
+                "Careers",
+                "Blogs",
+                "Payments"
+              ]}
             />
+
           </div>
         </div>
       </div>
@@ -82,17 +109,17 @@ export default function Footer() {
 
         <ul className="my-6 mx-auto flex flex-col lg:flex-row justify-center gap-3 lg:gap-10 text-white text-center">
           <li>geetu@planandbooktrip.com</li>
-          <li>0000000000</li>
+          <li>+91-8368088945</li>
           <li>planandbooktrip.com</li>
         </ul>
 
-        {/* Icons */}
+        {/* Social Icons */}
         <div className="flex justify-center w-full mb-4">
           <div className="flex flex-row justify-center gap-6">
             {["facebook", "instagram", "linkedin", "youtube"].map((icon, i) => (
               <a
                 key={i}
-                href=""
+                href="#"
                 className="flex items-center p-2 rounded-full bg-white"
               >
                 <img

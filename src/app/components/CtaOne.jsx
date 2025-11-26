@@ -34,7 +34,7 @@ const CtaOne = () => {
                   Name <span className="text-red-500">*</span>
                 </label>
                 <div className="flex items-center gap-3 border border-gray-300 rounded-lg px-4 py-3 mt-1">
-                  <span className="text-gray-500 text-xl">👤</span>
+                  <span className="text-gray-500 text-xl"></span>
                   <input
                     type="text"
                     placeholder="e.g. John Smith"
@@ -49,7 +49,7 @@ const CtaOne = () => {
                   Phone Number <span className="text-red-500">*</span>
                 </label>
                 <div className="flex items-center gap-3 border border-gray-300 rounded-lg px-4 py-3 mt-1">
-                  <span className="text-gray-500 text-xl">📞</span>
+                  <span className="text-gray-500 text-xl"></span>
                   <input
                     type="number"
                     placeholder="Enter your 10 digit number"
@@ -64,7 +64,7 @@ const CtaOne = () => {
                   Email Id <span className="text-red-500">*</span>
                 </label>
                 <div className="flex items-center gap-3 border border-gray-300 rounded-lg px-4 py-3 mt-1">
-                  <span className="text-gray-500 text-xl">✉️</span>
+                  <span className="text-gray-500 text-xl"></span>
                   <input
                     type="email"
                     placeholder="john@example.com"
@@ -79,7 +79,7 @@ const CtaOne = () => {
                   Message
                 </label>
                 <div className="flex items-start gap-3 border border-gray-300 rounded-lg px-4 py-3 mt-1">
-                  <span className="text-gray-500 text-xl">💬</span>
+                  <span className="text-gray-500 text-xl"></span>
                   <textarea
                     placeholder="Any Message"
                     className="w-full outline-none resize-none h-20 text-gray-700 placeholder-gray-400"

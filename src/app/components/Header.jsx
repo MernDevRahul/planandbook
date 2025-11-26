@@ -54,7 +54,7 @@ export default function Header() {
               className="flex items-center gap-1.5 border border-(--primary) rounded-full px-5 py-2"
             >
               <Search size={16} className="text-(--primary)" />
-              +91-0000000000
+              +91-8368088945
             </a>
           </ul>
 
@@ -106,9 +106,9 @@ export default function Header() {
 
     <a
       href="tel:0000000000"
-      className="flex items-center gap-2 border border-[#01AFD1] rounded-full px-5 py-3 mt-4"
+      className="flex items-center gap-2 border border-(--primary) rounded-full px-5 py-3 mt-4"
     >
-      <Search size={18} className="text-[#01AFD1]" />
+      <Search size={18} className="text-(--primary)" />
       Call Now
     </a>
   </ul>
