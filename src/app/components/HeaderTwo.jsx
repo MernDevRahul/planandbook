@@ -15,33 +15,33 @@ const HeaderTwo = () => {
   <div className="absolute left-0 top-full opacity-0 invisible group-hover:opacity-100 group-hover:visible bg-white text-black shadow-lg rounded-md mt-3 w-[550px] p-6 transition-all duration-300">
     <ul className="grid grid-cols-3 gap-y-2 gap-x-10">
 
-      <li><a className="block no-underline text-[13px] border border-transparent leading-5hover:bg-[#01aed11f] hover:text-[#01afd1]  hover:border hover:border-[#01afd1] p-1 rounded">Europe</a></li>
-      <li><a className="block no-underline text-[13px] border border-transparent leading-5hover:bg-[#01aed11f] hover:text-[#01afd1]  hover:border hover:border-[#01afd1] p-1 rounded">Thailand</a></li>
-      <li><a className="block no-underline text-[13px] border border-transparent leading-5hover:bg-[#01aed11f] hover:text-[#01afd1]  hover:border hover:border-[#01afd1] p-1 rounded">Bali</a></li>
+      <li><a className="block no-underline text-[13px] border border-transparent leading-5hover:bg-[#01aed11f] hover:text-(--primary)  hover:border hover:border-(--primary) p-1 rounded">Europe</a></li>
+      <li><a className="block no-underline text-[13px] border border-transparent leading-5hover:bg-[#01aed11f] hover:text-(--primary)  hover:border hover:border-(--primary) p-1 rounded">Thailand</a></li>
+      <li><a className="block no-underline text-[13px] border border-transparent leading-5hover:bg-[#01aed11f] hover:text-(--primary)  hover:border hover:border-(--primary) p-1 rounded">Bali</a></li>
 
-      <li><a className="block no-underline text-[13px] border border-transparent leading-5hover:bg-[#01aed11f] hover:text-[#01afd1]  hover:border hover:border-[#01afd1] p-1 rounded">Philippines</a></li>
-      <li><a className="block no-underline text-[13px] border border-transparent leading-5hover:bg-[#01aed11f] hover:text-[#01afd1]  hover:border hover:border-[#01afd1] p-1 rounded">Malaysia</a></li>
-      <li><a className="block no-underline text-[13px] leading-5hover:bg-[#01aed11f] hover:text-[#01afd1]  hover:border hover:border-[#01afd1] p-1 rounded">South Africa</a></li>
+      <li><a className="block no-underline text-[13px] border border-transparent leading-5hover:bg-[#01aed11f] hover:text-(--primary)  hover:border hover:border-(--primary) p-1 rounded">Philippines</a></li>
+      <li><a className="block no-underline text-[13px] border border-transparent leading-5hover:bg-[#01aed11f] hover:text-(--primary)  hover:border hover:border-(--primary) p-1 rounded">Malaysia</a></li>
+      <li><a className="block no-underline text-[13px] leading-5hover:bg-[#01aed11f] hover:text-(--primary)  hover:border hover:border-(--primary) p-1 rounded">South Africa</a></li>
 
-      <li><a className="block no-underline text-[13px] border border-transparent leading-5hover:bg-[#01aed11f] hover:text-[#01afd1]  hover:border hover:border-[#01afd1] p-1 rounded">France</a></li>
-      <li><a className="block no-underline text-[13px] border border-transparent leading-5hover:bg-[#01aed11f] hover:text-[#01afd1]  hover:border hover:border-[#01afd1] p-1 rounded">Turkey</a></li>
-      <li><a className="block no-underline text-[13px] border border-transparent leading-5hover:bg-[#01aed11f] hover:text-[#01afd1]  hover:border hover:border-[#01afd1] p-1 rounded">Vietnam</a></li>
+      <li><a className="block no-underline text-[13px] border border-transparent leading-5hover:bg-[#01aed11f] hover:text-(--primary)  hover:border hover:border-(--primary) p-1 rounded">France</a></li>
+      <li><a className="block no-underline text-[13px] border border-transparent leading-5hover:bg-[#01aed11f] hover:text-(--primary)  hover:border hover:border-(--primary) p-1 rounded">Turkey</a></li>
+      <li><a className="block no-underline text-[13px] border border-transparent leading-5hover:bg-[#01aed11f] hover:text-(--primary)  hover:border hover:border-(--primary) p-1 rounded">Vietnam</a></li>
 
-      <li><a className="block no-underline text-[13px] border border-transparent leading-5hover:bg-[#01aed11f] hover:text-[#01afd1]  hover:border hover:border-[#01afd1] p-1 rounded">Japan</a></li>
-      <li><a className="block no-underline text-[13px] border border-transparent leading-5hover:bg-[#01aed11f] hover:text-[#01afd1]  hover:border hover:border-[#01afd1] p-1 rounded">Sri Lanka</a></li>
-      <li><a className="block no-underline text-[13px] border border-transparent leading-5hover:bg-[#01aed11f] hover:text-[#01afd1]  hover:border hover:border-[#01afd1] p-1 rounded">Kazakhstan</a></li>
+      <li><a className="block no-underline text-[13px] border border-transparent leading-5hover:bg-[#01aed11f] hover:text-(--primary)  hover:border hover:border-(--primary) p-1 rounded">Japan</a></li>
+      <li><a className="block no-underline text-[13px] border border-transparent leading-5hover:bg-[#01aed11f] hover:text-(--primary)  hover:border hover:border-(--primary) p-1 rounded">Sri Lanka</a></li>
+      <li><a className="block no-underline text-[13px] border border-transparent leading-5hover:bg-[#01aed11f] hover:text-(--primary)  hover:border hover:border-(--primary) p-1 rounded">Kazakhstan</a></li>
 
-      <li><a className="block no-underline text-[13px] border border-transparent leading-5hover:bg-[#01aed11f] hover:text-[#01afd1]  hover:border hover:border-[#01afd1] p-1 rounded">Maldives</a></li>
-      <li><a className="block no-underline text-[13px] border border-transparent leading-5hover:bg-[#01aed11f] hover:text-[#01afd1]  hover:border hover:border-[#01afd1] p-1 rounded">Kenya</a></li>
-      <li><a className="block no-underline text-[13px] border border-transparent leading-5hover:bg-[#01aed11f] hover:text-[#01afd1]  hover:border hover:border-[#01afd1] p-1 rounded">New Zealand</a></li>
+      <li><a className="block no-underline text-[13px] border border-transparent leading-5hover:bg-[#01aed11f] hover:text-(--primary)  hover:border hover:border-(--primary) p-1 rounded">Maldives</a></li>
+      <li><a className="block no-underline text-[13px] border border-transparent leading-5hover:bg-[#01aed11f] hover:text-(--primary)  hover:border hover:border-(--primary) p-1 rounded">Kenya</a></li>
+      <li><a className="block no-underline text-[13px] border border-transparent leading-5hover:bg-[#01aed11f] hover:text-(--primary)  hover:border hover:border-(--primary) p-1 rounded">New Zealand</a></li>
 
-      <li><a className="block no-underline text-[13px] border border-transparent leading-5hover:bg-[#01aed11f] hover:text-[#01afd1]  hover:border hover:border-[#01afd1] p-1 rounded">Australia</a></li>
-      <li><a className="block no-underline text-[13px] border border-transparent leading-5hover:bg-[#01aed11f] hover:text-[#01afd1]  hover:border hover:border-[#01afd1] p-1 rounded">Dubai</a></li>
-      <li><a className="block no-underline text-[13px] border border-transparent leading-5hover:bg-[#01aed11f] hover:text-[#01afd1]  hover:border hover:border-[#01afd1] p-1 rounded">Singapore</a></li>
+      <li><a className="block no-underline text-[13px] border border-transparent leading-5hover:bg-[#01aed11f] hover:text-(--primary)  hover:border hover:border-(--primary) p-1 rounded">Australia</a></li>
+      <li><a className="block no-underline text-[13px] border border-transparent leading-5hover:bg-[#01aed11f] hover:text-(--primary)  hover:border hover:border-(--primary) p-1 rounded">Dubai</a></li>
+      <li><a className="block no-underline text-[13px] border border-transparent leading-5hover:bg-[#01aed11f] hover:text-(--primary)  hover:border hover:border-(--primary) p-1 rounded">Singapore</a></li>
 
-      <li><a className="block no-underline text-[13px] border border-transparent leading-5hover:bg-[#01aed11f] hover:text-[#01afd1]  hover:border hover:border-[#01afd1] p-1 rounded">Switzerland</a></li>
-      <li><a className="block no-underline text-[13px] border border-transparent leading-5hover:bg-[#01aed11f] hover:text-[#01afd1]  hover:border hover:border-[#01afd1] p-1 rounded">Spain</a></li>
-      <li><a className="block no-underline text-[13px] border border-transparent leading-5hover:bg-[#01aed11f] hover:text-[#01afd1]  hover:border hover:border-[#01afd1] p-1 rounded">Mauritius</a></li>
+      <li><a className="block no-underline text-[13px] border border-transparent leading-5hover:bg-[#01aed11f] hover:text-(--primary)  hover:border hover:border-(--primary) p-1 rounded">Switzerland</a></li>
+      <li><a className="block no-underline text-[13px] border border-transparent leading-5hover:bg-[#01aed11f] hover:text-(--primary)  hover:border hover:border-(--primary) p-1 rounded">Spain</a></li>
+      <li><a className="block no-underline text-[13px] border border-transparent leading-5hover:bg-[#01aed11f] hover:text-(--primary)  hover:border hover:border-(--primary) p-1 rounded">Mauritius</a></li>
 
     </ul>
   </div>
@@ -58,23 +58,23 @@ const HeaderTwo = () => {
   <div className="absolute left-0 top-full opacity-0 invisible group-hover:opacity-100 group-hover:visible bg-white text-black shadow-lg rounded-md mt-3 w-[450px] p-6 transition-all duration-300">
     <ul className="grid grid-cols-2 gap-y-3 gap-x-10">
 
-      <li><a className="block no-underline text-[13px] border border-transparent leading-5hover:bg-[#01aed11f] hover:text-[#01afd1]  hover:border hover:border-[#01afd1] p-1 rounded">Rajasthan</a></li>
-      <li><a className="block no-underline text-[13px] border border-transparent leading-5hover:bg-[#01aed11f] hover:text-[#01afd1]  hover:border hover:border-[#01afd1] p-1 rounded">Kashmir</a></li>
-      <li><a className="block no-underline text-[13px] border border-transparent leading-5hover:bg-[#01aed11f] hover:text-[#01afd1]  hover:border hover:border-[#01afd1] p-1 rounded">Meghalaya</a></li>
+      <li><a className="block no-underline text-[13px] border border-transparent leading-5hover:bg-[#01aed11f] hover:text-(--primary)  hover:border hover:border-(--primary) p-1 rounded">Rajasthan</a></li>
+      <li><a className="block no-underline text-[13px] border border-transparent leading-5hover:bg-[#01aed11f] hover:text-(--primary)  hover:border hover:border-(--primary) p-1 rounded">Kashmir</a></li>
+      <li><a className="block no-underline text-[13px] border border-transparent leading-5hover:bg-[#01aed11f] hover:text-(--primary)  hover:border hover:border-(--primary) p-1 rounded">Meghalaya</a></li>
 
-      <li><a className="block no-underline text-[13px] border border-transparent leading-5hover:bg-[#01aed11f] hover:text-[#01afd1]  hover:border hover:border-[#01afd1] p-1 rounded">Sikkim</a></li>
-      <li><a className="block no-underline text-[13px] border border-transparent leading-5hover:bg-[#01aed11f] hover:text-[#01afd1]  hover:border hover:border-[#01afd1] p-1 rounded">Andaman</a></li>
-      <li><a className="block no-underline text-[13px] border border-transparent leading-5hover:bg-[#01aed11f] hover:text-[#01afd1]  hover:border hover:border-[#01afd1] p-1 rounded">Spiti</a></li>
+      <li><a className="block no-underline text-[13px] border border-transparent leading-5hover:bg-[#01aed11f] hover:text-(--primary)  hover:border hover:border-(--primary) p-1 rounded">Sikkim</a></li>
+      <li><a className="block no-underline text-[13px] border border-transparent leading-5hover:bg-[#01aed11f] hover:text-(--primary)  hover:border hover:border-(--primary) p-1 rounded">Andaman</a></li>
+      <li><a className="block no-underline text-[13px] border border-transparent leading-5hover:bg-[#01aed11f] hover:text-(--primary)  hover:border hover:border-(--primary) p-1 rounded">Spiti</a></li>
 
-      <li><a className="block no-underline text-[13px] border border-transparent leading-5hover:bg-[#01aed11f] hover:text-[#01afd1]  hover:border hover:border-[#01afd1] p-1 rounded">Ladakh</a></li>
-      <li><a className="block no-underline text-[13px] border border-transparent leading-5hover:bg-[#01aed11f] hover:text-[#01afd1]  hover:border hover:border-[#01afd1] p-1 rounded">Nagaland</a></li>
-      <li><a className="block no-underline text-[13px] border border-transparent leading-5hover:bg-[#01aed11f] hover:text-[#01afd1]  hover:border hover:border-[#01afd1] p-1 rounded">Kerela</a></li>
+      <li><a className="block no-underline text-[13px] border border-transparent leading-5hover:bg-[#01aed11f] hover:text-(--primary)  hover:border hover:border-(--primary) p-1 rounded">Ladakh</a></li>
+      <li><a className="block no-underline text-[13px] border border-transparent leading-5hover:bg-[#01aed11f] hover:text-(--primary)  hover:border hover:border-(--primary) p-1 rounded">Nagaland</a></li>
+      <li><a className="block no-underline text-[13px] border border-transparent leading-5hover:bg-[#01aed11f] hover:text-(--primary)  hover:border hover:border-(--primary) p-1 rounded">Kerela</a></li>
 
-      <li><a className="block no-underline text-[13px] border border-transparent leading-5hover:bg-[#01aed11f] hover:text-[#01afd1]  hover:border hover:border-[#01afd1] p-1 rounded">Arunachal Pradesh</a></li>
-      <li><a className="block no-underline text-[13px] border border-transparent leading-5hover:bg-[#01aed11f] hover:text-[#01afd1]  hover:border hover:border-[#01afd1] p-1 rounded">Uttrakhand</a></li>
-      <li><a className="block no-underline text-[13px] border border-transparent leading-5hover:bg-[#01aed11f] hover:text-[#01afd1]  hover:border hover:border-[#01afd1] p-1 rounded">Himachal Pradesh</a></li>
+      <li><a className="block no-underline text-[13px] border border-transparent leading-5hover:bg-[#01aed11f] hover:text-(--primary)  hover:border hover:border-(--primary) p-1 rounded">Arunachal Pradesh</a></li>
+      <li><a className="block no-underline text-[13px] border border-transparent leading-5hover:bg-[#01aed11f] hover:text-(--primary)  hover:border hover:border-(--primary) p-1 rounded">Uttrakhand</a></li>
+      <li><a className="block no-underline text-[13px] border border-transparent leading-5hover:bg-[#01aed11f] hover:text-(--primary)  hover:border hover:border-(--primary) p-1 rounded">Himachal Pradesh</a></li>
 
-      <li><a className="block no-underline text-[13px] border border-transparent leading-5hover:bg-[#01aed11f] hover:text-[#01afd1]  hover:border hover:border-[#01afd1] p-1 rounded">Weekend Getaways</a></li>
+      <li><a className="block no-underline text-[13px] border border-transparent leading-5hover:bg-[#01aed11f] hover:text-(--primary)  hover:border hover:border-(--primary) p-1 rounded">Weekend Getaways</a></li>
     </ul>
   </div>
 </div>
@@ -90,28 +90,28 @@ const HeaderTwo = () => {
   <div className="absolute left-0 top-full opacity-0 invisible group-hover:opacity-100 group-hover:visible bg-white text-black shadow-lg rounded-md mt-3 w-[490px] p-6 transition-all duration-300">
     <ul className="grid grid-cols-3 gap-y-3 gap-x-10">
 
-      <li><a className="block no-underline text-[13px] border border-transparent leading-5hover:bg-[#01aed11f] hover:text-[#01afd1]  hover:border hover:border-[#01afd1] p-1 rounded">Europe</a></li>
-      <li><a className="block no-underline text-[13px] border border-transparent leading-5hover:bg-[#01aed11f] hover:text-[#01afd1]  hover:border hover:border-[#01afd1] p-1 rounded">Bali</a></li>
-      <li><a className="block no-underline text-[13px] border border-transparent leading-5hover:bg-[#01aed11f] hover:text-[#01afd1]  hover:border hover:border-[#01afd1] p-1 rounded">Vietnam</a></li>
+      <li><a className="block no-underline text-[13px] border border-transparent leading-5hover:bg-[#01aed11f] hover:text-(--primary)  hover:border hover:border-(--primary) p-1 rounded">Europe</a></li>
+      <li><a className="block no-underline text-[13px] border border-transparent leading-5hover:bg-[#01aed11f] hover:text-(--primary)  hover:border hover:border-(--primary) p-1 rounded">Bali</a></li>
+      <li><a className="block no-underline text-[13px] border border-transparent leading-5hover:bg-[#01aed11f] hover:text-(--primary)  hover:border hover:border-(--primary) p-1 rounded">Vietnam</a></li>
 
-      <li><a className="block no-underline text-[13px] border border-transparent leading-5hover:bg-[#01aed11f] hover:text-[#01afd1]  hover:border hover:border-[#01afd1] p-1 rounded">Sri Lanka</a></li>
-      <li><a className="block no-underline text-[13px] border border-transparent leading-5hover:bg-[#01aed11f] hover:text-[#01afd1]  hover:border hover:border-[#01afd1] p-1 rounded">Japan</a></li>
-      <li><a className="block no-underline text-[13px] border border-transparent leading-5hover:bg-[#01aed11f] hover:text-[#01afd1]  hover:border hover:border-[#01afd1] p-1 rounded">Philippines</a></li>
+      <li><a className="block no-underline text-[13px] border border-transparent leading-5hover:bg-[#01aed11f] hover:text-(--primary)  hover:border hover:border-(--primary) p-1 rounded">Sri Lanka</a></li>
+      <li><a className="block no-underline text-[13px] border border-transparent leading-5hover:bg-[#01aed11f] hover:text-(--primary)  hover:border hover:border-(--primary) p-1 rounded">Japan</a></li>
+      <li><a className="block no-underline text-[13px] border border-transparent leading-5hover:bg-[#01aed11f] hover:text-(--primary)  hover:border hover:border-(--primary) p-1 rounded">Philippines</a></li>
 
-      <li><a className="block no-underline text-[13px] border border-transparent leading-5hover:bg-[#01aed11f] hover:text-[#01afd1]  hover:border hover:border-[#01afd1] p-1 rounded">Dubai</a></li>
-      <li><a className="block no-underline text-[13px] border border-transparent leading-5hover:bg-[#01aed11f] hover:text-[#01afd1]  hover:border hover:border-[#01afd1] p-1 rounded">Thailand</a></li>
-      <li><a className="block no-underline text-[13px] border border-transparent leading-5hover:bg-[#01aed11f] hover:text-[#01afd1]  hover:border hover:border-[#01afd1] p-1 rounded">Georgia</a></li>
+      <li><a className="block no-underline text-[13px] border border-transparent leading-5hover:bg-[#01aed11f] hover:text-(--primary)  hover:border hover:border-(--primary) p-1 rounded">Dubai</a></li>
+      <li><a className="block no-underline text-[13px] border border-transparent leading-5hover:bg-[#01aed11f] hover:text-(--primary)  hover:border hover:border-(--primary) p-1 rounded">Thailand</a></li>
+      <li><a className="block no-underline text-[13px] border border-transparent leading-5hover:bg-[#01aed11f] hover:text-(--primary)  hover:border hover:border-(--primary) p-1 rounded">Georgia</a></li>
 
-      <li><a className="block no-underline text-[13px] border border-transparent leading-5hover:bg-[#01aed11f] hover:text-[#01afd1]  hover:border hover:border-[#01afd1] p-1 rounded">Bhutan</a></li>
-      <li><a className="block no-underline text-[13px] border border-transparent leading-5hover:bg-[#01aed11f] hover:text-[#01afd1]  hover:border hover:border-[#01afd1] p-1 rounded">Arunachal pradesh</a></li>
-      <li><a className="block no-underline text-[13px] border border-transparent leading-5hover:bg-[#01aed11f] hover:text-[#01afd1]  hover:border hover:border-[#01afd1] p-1 rounded">Andaman</a></li>
+      <li><a className="block no-underline text-[13px] border border-transparent leading-5hover:bg-[#01aed11f] hover:text-(--primary)  hover:border hover:border-(--primary) p-1 rounded">Bhutan</a></li>
+      <li><a className="block no-underline text-[13px] border border-transparent leading-5hover:bg-[#01aed11f] hover:text-(--primary)  hover:border hover:border-(--primary) p-1 rounded">Arunachal pradesh</a></li>
+      <li><a className="block no-underline text-[13px] border border-transparent leading-5hover:bg-[#01aed11f] hover:text-(--primary)  hover:border hover:border-(--primary) p-1 rounded">Andaman</a></li>
 
-      <li><a className="block no-underline text-[13px] border border-transparent leading-5hover:bg-[#01aed11f] hover:text-[#01afd1]  hover:border hover:border-[#01afd1] p-1 rounded">Spiti</a></li>
-      <li><a className="block no-underline text-[13px] border border-transparent leading-5hover:bg-[#01aed11f] hover:text-[#01afd1]  hover:border hover:border-[#01afd1] p-1 rounded">Himachal Pradesh</a></li>
-      <li><a className="block no-underline text-[13px] border border-transparent leading-5hover:bg-[#01aed11f] hover:text-[#01afd1]  hover:border hover:border-[#01afd1] p-1 rounded">Ladakh</a></li>
+      <li><a className="block no-underline text-[13px] border border-transparent leading-5hover:bg-[#01aed11f] hover:text-(--primary)  hover:border hover:border-(--primary) p-1 rounded">Spiti</a></li>
+      <li><a className="block no-underline text-[13px] border border-transparent leading-5hover:bg-[#01aed11f] hover:text-(--primary)  hover:border hover:border-(--primary) p-1 rounded">Himachal Pradesh</a></li>
+      <li><a className="block no-underline text-[13px] border border-transparent leading-5hover:bg-[#01aed11f] hover:text-(--primary)  hover:border hover:border-(--primary) p-1 rounded">Ladakh</a></li>
 
-      <li><a className="block no-underline text-[13px] border border-transparent leading-5hover:bg-[#01aed11f] hover:text-[#01afd1]  hover:border hover:border-[#01afd1] p-1 rounded">Meghalaya</a></li>
-      <li><a className="block no-underline text-[13px] border border-transparent leading-5hover:bg-[#01aed11f] hover:text-[#01afd1]  hover:border hover:border-[#01afd1] p-1 rounded">Kazakhstan</a></li>
+      <li><a className="block no-underline text-[13px] border border-transparent leading-5hover:bg-[#01aed11f] hover:text-(--primary)  hover:border hover:border-(--primary) p-1 rounded">Meghalaya</a></li>
+      <li><a className="block no-underline text-[13px] border border-transparent leading-5hover:bg-[#01aed11f] hover:text-(--primary)  hover:border hover:border-(--primary) p-1 rounded">Kazakhstan</a></li>
     </ul>
   </div>
 </div>

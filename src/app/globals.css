@@ -3,7 +3,8 @@
 
 /* Custom CSS variables */
 :root {
-  --primary: #01afd1;
+  --primary: #FF7C5B;
+  /* --primary: #01afd1; */
   --secondary: #353e4d;
   --accent: #4f46e5;
 }

@@ -8,7 +8,7 @@ export default function Header() {
 
   return (
     <>
-      <div className="shadow-sm h-[60px] flex justify-between items-center bg-[#01AFD1] lg:bg-white  px-4 md:px-10 w-full fixed top-0 z-200 text-(--secondary)">
+      <div className="shadow-sm h-[60px] flex justify-between items-center bg-(--primary) lg:bg-white  px-4 md:px-10 w-full fixed top-0 z-200 text-(--secondary)">
 
         {/* LEFT: LOGO + SEARCH (desktop only) */}
         <div className="flex items-center gap-5 lg:ms-[50px]">
@@ -19,7 +19,7 @@ export default function Header() {
           <input
             type="text"
             placeholder="Where do you want to go?"
-            className="hidden lg:flex text-sm rounded-3xl border border-[#01AFD1] outline-none px-4 py-2 w-[260px]"
+            className="hidden lg:flex text-sm rounded-3xl border border-(--primary) outline-none px-4 py-2 w-[260px]"
           />
         </div>
 
@@ -33,7 +33,7 @@ export default function Header() {
 
           {/* Desktop Menu */}
           <ul className="hidden lg:flex items-center gap-8 text-[14px] font-sm leading-4">
-            <li className="border-b-2 border-transparent hover:border-[#01AFD1] transition-all duration-300 ease-in-out pb-1 cursor-pointer">
+            <li className="border-b-2 border-transparent hover:border-(--primary) transition-all duration-300 ease-in-out pb-1 cursor-pointer">
               <div className="flex gap-5 items-center relative font-sm">
                 <img
                   src="/png/christmas-cap.png"
@@ -44,16 +44,16 @@ export default function Header() {
               </div>
             </li>
 
-            <li className="border-b-2 border-transparent hover:border-[#01AFD1] transition-all duration-300 ease-in-out pb-1 cursor-pointer"><a>Upcoming Trips</a></li>
-            <li className="border-b-2 border-transparent hover:border-[#01AFD1] transition-all duration-300 ease-in-out pb-1 cursor-pointer"><a>Corporate Tours</a></li>
-            <li className="border-b-2 border-transparent hover:border-[#01AFD1] transition-all duration-300 ease-in-out pb-1 cursor-pointer"><a>Blogs</a></li>
-            <li className="border-b-2 border-transparent hover:border-[#01AFD1] transition-all duration-300 ease-in-out pb-1 cursor-pointer"><a>About Us</a></li>
+            <li className="border-b-2 border-transparent hover:border-(--primary) transition-all duration-300 ease-in-out pb-1 cursor-pointer"><a>Upcoming Trips</a></li>
+            <li className="border-b-2 border-transparent hover:border-(--primary) transition-all duration-300 ease-in-out pb-1 cursor-pointer"><a>Corporate Tours</a></li>
+            <li className="border-b-2 border-transparent hover:border-(--primary) transition-all duration-300 ease-in-out pb-1 cursor-pointer"><a>Blogs</a></li>
+            <li className="border-b-2 border-transparent hover:border-(--primary) transition-all duration-300 ease-in-out pb-1 cursor-pointer"><a>About Us</a></li>
 
             <a
               href="tel:0000000000"
-              className="flex items-center gap-1.5 border border-[#01AFD1] rounded-full px-5 py-2"
+              className="flex items-center gap-1.5 border border-(--primary) rounded-full px-5 py-2"
             >
-              <Search size={16} className="text-[#01AFD1]" />
+              <Search size={16} className="text-(--primary)" />
               +91-0000000000
             </a>
           </ul>
