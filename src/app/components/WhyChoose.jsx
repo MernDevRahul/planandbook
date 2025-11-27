@@ -37,7 +37,7 @@ const WhyChoose = () => {
   };
 
   return (
-    <div className="px-4 sm:pt-8 md:px-10 lg:px-[260px] py-2.5 mt-2">
+    <div className="px-4 sm:pt-8 md:px-[100px] lg:px-20 2xl:px-[260px] lg:py-[50px] py-2.5 mt-2">
       <div className="w-full flex p-2.5 flex-col justify-center items-center gap-2.5">
         <h2 className="text-black text-[24px] font-semibold leading-9">
           Why Plan and Book Trip?
@@ -57,7 +57,7 @@ const WhyChoose = () => {
       {/* Scrollable wrapper */}
       <div
         ref={scrollRef}
-        className="flex gap-4 overflow-x-auto scroll-smooth pb-4 lg:grid lg:grid-cols-4 lg:gap-5 lg:overflow-x-visible"
+        className="flex gap-4 overflow-x-auto scroll-smooth pb-4 lg:grid lg:grid-cols-4 lg:gap-5 lg:overflow-x-visible "
       >
         {cardData.map((card, idx) => (
           <div

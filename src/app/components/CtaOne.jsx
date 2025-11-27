@@ -2,7 +2,7 @@ import React from 'react'
 
 const CtaOne = () => {
   return (
-    <div className="px-4 sm:pt-8 md:px-10 lg:px-[260px] py-6 mt-6 mb-10">
+    <div className="px-4 sm:pt-8 md:px-[100px] lg:px-20 2xl:px-[260px] py-6 mt-4 mb-10">
 
       <div className="w-full rounded-xl bg-(--primary) shadow-lg flex flex-col lg:flex-row justify-between items-center lg:px-[70px] lg:py-10 p-6 gap-10">
 
@@ -90,7 +90,7 @@ const CtaOne = () => {
               {/* Submit Button */}
               <button
                 type="submit"
-                className="w-full bg-[#FFE600] text-black font-semibold py-3 rounded-full mt-3 shadow-md hover:scale-[1.02] transition"
+                className="w-full bg-(--primary) text-white text-shadow-lg font-semibold py-3 rounded-full mt-3 shadow-md hover:scale-[1.02] transition"
               >
                 Submit
               </button>
