@@ -214,7 +214,7 @@ const SectionOne = () => {
 
           {/* Explore Section */}
           <div className="px-5 py-5 flex flex-col gap-2 lg:hidden">
-            <h2 className="font-semibold text-[16px]">Explore</h2>
+            <h2 className="font-semibold text-[16px] text-black">Explore</h2>
 
             <div className="ps-1 overflow-x-auto no-scrollbar">
               <div className="flex gap-3 w-fit">

@@ -89,7 +89,7 @@ export default function Header() {
 >
 
 
-  <ul className="space-y-5 px-6 py-4 text-[16px] font-sm">
+  <ul className="space-y-5 px-6 py-4 text-[16px] text-black font-sm">
     <li className="flex gap-5 items-center relative border-b">
       <img
         src="/png/christmas-cap.png"
