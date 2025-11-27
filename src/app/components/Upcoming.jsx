@@ -143,7 +143,7 @@ const Upcoming = () => {
   };
 
   return (
-    <div className="w-full px-4 sm:px-6 md:px-[100px] lg:px-20 2xl:px-[260px] lg:py-[50px] py-10 bg-amber-100/15 mt-40">
+    <div className="w-full px-4 sm:px-6 md:px-[100px] lg:px-20 2xl:px-[260px] lg:py-[50px] py-10 bg-amber-100/15 mt-5 lg:mt-40">
       {/* HEADER */}
       <div className="flex items-center justify-between w-full mb-6">
         <h2 className="text-[20px] sm:text-[24px] font-semibold text-black">
