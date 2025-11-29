@@ -8,10 +8,10 @@ export default function Header() {
 
   return (
     <>
-      <div className="shadow-sm h-[60px] flex justify-between items-center bg-(--primary) lg:bg-white  px-4 md:px-10 w-full fixed top-0 z-200 text-(--secondary)">
+      <div className="shadow-sm h-[60px] flex justify-between items-center bg-(--primary) lg:bg-white xl:px-4 md:px-10 w-full fixed top-0 z-200 text-(--secondary)">
 
         {/* LEFT: LOGO + SEARCH (desktop only) */}
-        <div className="flex items-center gap-5 lg:ms-[50px]">
+        <div className="flex items-center gap-2 xl:gap-5 xl:ms-[50px]">
           <a className="text-xl cursor-pointer">
             <Image src="/logo/logo.png" width={60} height={60} alt="logo" />
           </a>
@@ -19,7 +19,7 @@ export default function Header() {
           <input
             type="text"
             placeholder="Where do you want to go?"
-            className="hidden lg:flex text-sm rounded-3xl border border-(--primary) outline-none px-4 py-2 w-[260px]"
+            className="hidden lg:flex text-xs xl:text-sm rounded-3xl border border-(--primary) outline-none px-3 py-2 xl:px-4 xl:py-2 w-[180px] xl:w-[260px]"
           />
         </div>
 
@@ -32,7 +32,7 @@ export default function Header() {
           </button>
 
           {/* Desktop Menu */}
-          <ul className="hidden lg:flex items-center gap-8 text-[14px] font-sm leading-4">
+          <ul className="hidden lg:flex items-center gap-4 xl:gap-8 text-[13px] xl:text-[14px] font-sm leading-4">
             <li className="border-b-2 border-transparent hover:border-(--primary) transition-all duration-300 ease-in-out pb-1 cursor-pointer">
               <div className="flex gap-5 items-center relative font-sm">
                 <img
@@ -45,13 +45,13 @@ export default function Header() {
             </li>
 
             <li className="border-b-2 border-transparent hover:border-(--primary) transition-all duration-300 ease-in-out pb-1 cursor-pointer"><a>Upcoming Trips</a></li>
-            <li className="border-b-2 border-transparent hover:border-(--primary) transition-all duration-300 ease-in-out pb-1 cursor-pointer"><a>Corporate Tours</a></li>
-            <li className="border-b-2 border-transparent hover:border-(--primary) transition-all duration-300 ease-in-out pb-1 cursor-pointer"><a>Blogs</a></li>
             <li className="border-b-2 border-transparent hover:border-(--primary) transition-all duration-300 ease-in-out pb-1 cursor-pointer"><a>About Us</a></li>
+            <li className="border-b-2 border-transparent hover:border-(--primary) transition-all duration-300 ease-in-out pb-1 cursor-pointer"><a>Blogs</a></li>
+            <li className="border-b-2 border-transparent hover:border-(--primary) transition-all duration-300 ease-in-out pb-1 cursor-pointer"><a>Payments</a></li>
 
             <a
               href="tel:0000000000"
-              className="flex items-center gap-1.5 border border-(--primary) rounded-full px-5 py-2"
+              className="flex items-center gap-1 xl:gap-1.5 border border-(--primary) rounded-full px-3 xl:px-5 py-2"
             >
               <Search size={16} className="text-(--primary)" />
               +91-8368088945

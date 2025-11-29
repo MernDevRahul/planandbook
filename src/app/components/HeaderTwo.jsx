@@ -3,7 +3,7 @@ import React from "react";
 const HeaderTwo = () => {
   return (
     <div className="hidden bg-(--primary) h-[60px] lg:flex justify-center items-center font-normal fixed top-[60px] w-full text-white z-200">
-      <ul className="flex items-center list-none ms-[51px] gap-10 font-[16px] leading-[19px]">
+      <ul className="flex items-center list-none ms-[51px] gap-5 xl:gap-10 text-[14px] xl:font-[16px] leading-[19px]">
         <li>
           <div className="relative group cursor-pointer">
   {/* Trigger */}
@@ -117,12 +117,13 @@ const HeaderTwo = () => {
 </div>
         </li>
         <li className="cursor-pointer">Honeymoon Packages</li>
-        <li className="flex items-center gap-0.5 cursor-pointer">
+        <li className="cursor-pointer">Coorporate Tours</li>
+        {/* <li className="flex items-center gap-0.5 cursor-pointer">
           <div>
             <img src="/png/gift.png" alt="gift-png" className="h-4" />
           </div>
           <div>Gifts Cards</div>
-        </li>
+        </li> */}
         <li className="cursor-pointer flex items-center relative">
           <div>Events & Festivals</div>
           <p className="absolute text-yellow-300 font-semibold -top-1 -right-[30px] text-[12px]">New</p>
