@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const HeaderTwo = () => {
@@ -8,7 +9,7 @@ const HeaderTwo = () => {
           <div className="relative group cursor-pointer">
   {/* Trigger */}
   <div tabIndex={0} className="m-1">
-    International Trips
+    <Link href="International-trips">International Trips</Link>
   </div>
 
   {/* Dropdown */}
