@@ -9,8 +9,9 @@
   --accent: #4f46e5;
 }
 
-body {
-  background-color: white;
+body { 
+  /* color: antiquewhite; */
+  background-color: rgb(241, 241, 241);
   font-family: var(--font-roboto);
   padding: 0;
   margin: 0;

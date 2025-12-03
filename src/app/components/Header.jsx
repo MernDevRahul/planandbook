@@ -2,6 +2,7 @@
 import Image from "next/image";
 import { useState } from "react";
 import { Menu, X, Search } from "lucide-react";
+import Link from "next/link";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -12,9 +13,9 @@ export default function Header() {
 
         {/* LEFT: LOGO + SEARCH (desktop only) */}
         <div className="flex items-center gap-2 xl:gap-5 xl:ms-[50px]">
-          <a className="text-xl cursor-pointer">
+          <Link href="/" className="text-xl cursor-pointer">
             <Image src="/logo/logo.png" width={60} height={60} alt="logo" />
-          </a>
+          </Link>
 
           <input
             type="text"
@@ -40,22 +41,22 @@ export default function Header() {
                   alt="christmas-cap"
                   className="h-[18px] absolute -top-2.5 -left-2.5 transform -scale-x-100"
                 />
-                <a>Christmas & New Year</a>
+                <Link href="/events-trips">Christmas & New Year</Link>
               </div>
             </li>
 
-            <li className="border-b-2 border-transparent hover:border-(--primary) transition-all duration-300 ease-in-out pb-1 cursor-pointer"><a>Upcoming Trips</a></li>
-            <li className="border-b-2 border-transparent hover:border-(--primary) transition-all duration-300 ease-in-out pb-1 cursor-pointer"><a>About Us</a></li>
-            <li className="border-b-2 border-transparent hover:border-(--primary) transition-all duration-300 ease-in-out pb-1 cursor-pointer"><a>Blogs</a></li>
-            <li className="border-b-2 border-transparent hover:border-(--primary) transition-all duration-300 ease-in-out pb-1 cursor-pointer"><a>Payments</a></li>
+            <li className="border-b-2 border-transparent hover:border-(--primary) transition-all duration-300 ease-in-out pb-1 cursor-pointer"><Link href="/upcoming-trips">Upcoming Trips</Link></li>
+            <li className="border-b-2 border-transparent hover:border-(--primary) transition-all duration-300 ease-in-out pb-1 cursor-pointer"><Link href="/about-us" >About Us</Link></li>
+            <li className="border-b-2 border-transparent hover:border-(--primary) transition-all duration-300 ease-in-out pb-1 cursor-pointer"><Link href="/blogs">Blogs</Link></li>
+            <li className="border-b-2 border-transparent hover:border-(--primary) transition-all duration-300 ease-in-out pb-1 cursor-pointer"><Link href="/payment">Payments</Link></li>
 
-            <a
+            <Link
               href="tel:0000000000"
               className="flex items-center gap-1 xl:gap-1.5 border border-(--primary) rounded-full px-3 xl:px-5 py-2"
             >
               <Search size={16} className="text-(--primary)" />
               +91-8368088945
-            </a>
+            </Link>
           </ul>
 
           {/* Hamburger */}
@@ -96,21 +97,21 @@ export default function Header() {
         alt="christmas-cap"
         className="h-[18px] absolute -top-2.5 -left-2.5 transform -scale-x-100"
       />
-      <a>Christmas & New Year</a>
+      <Link href="/events-trips">Christmas & New Year</Link>
     </li>
 
-    <li className="border-b"><a>Upcoming Trips</a></li>
-    <li className="border-b"><a>Corporate Tours</a></li>
-    <li className="border-b"><a>Blogs</a></li>
-    <li className="border-b"><a>About Us</a></li>
+    <li className="border-b"><Link href="/upcoming-trips">Upcoming Trips</Link></li>
+    <li className="border-b"><Link href="/corporate-tour">Corporate Tours</Link></li>
+    <li className="border-b"><Link href="/blogs">Blogs</Link></li>
+    <li className="border-b"><Link href="/about-us">About Us</Link></li>
 
-    <a
+    <Link
       href="tel:0000000000"
       className="flex items-center gap-2 border border-(--primary) rounded-full px-5 py-3 mt-4"
     >
       <Search size={18} className="text-(--primary)" />
       Call Now
-    </a>
+    </Link>
   </ul>
 </div>
     </>

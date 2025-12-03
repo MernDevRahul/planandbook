@@ -17,7 +17,7 @@ const CtaOne = () => {
 
         {/* RIGHT FORM */}
         <div className="w-full lg:w-1/2">
-          <div className="w-full bg-[#E6FAFF] p-5 sm:p-8 rounded-lg">
+          <div className="w-full bg-[#fff3e6] p-5 sm:p-8 rounded-lg">
 
             <h3 className="text-(--primary) font-bold text-[22px] sm:text-[26px] leading-[30px]">
               Plan and Book Trip Calling?

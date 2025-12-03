@@ -2,6 +2,7 @@
 "use client";
 import React, { useState } from "react";
 import { ChevronDown, ChevronUp } from "lucide-react";
+import Link from "next/link";
 
 const Section = ({ title, items }) => {
   const [open, setOpen] = useState(false);
@@ -33,9 +34,9 @@ const Section = ({ title, items }) => {
               key={i}
               className="text-[#ababab] font-normal text-[15px] leading-[22px] cursor-pointer w-max"
             >
-              <a href={item.href} className="no-underline hover:text-white">
+              <Link href={item.href} className="no-underline hover:text-white">
                 {item.label}
-              </a>
+              </Link>
             </li>
           ))}
         </ul>
@@ -102,7 +103,7 @@ export default function Footer() {
               items={[
                 { label: "About Us", href: "/about-us" },
                 { label: "Privacy Policy", href: "/privacy-policy" },
-                { label: "Terms & Conditions", href: "/terms" },
+                { label: "Terms & Conditions", href: "/terms-and-conditions" },
                 { label: "Support", href: "/support" },
                 { label: "Disclaimer", href: "/disclaimer" },
                 { label: "Careers", href: "/careers" },
@@ -126,19 +127,19 @@ export default function Footer() {
 
         <ul className="my-6 flex flex-col lg:flex-row justify-center gap-3 lg:gap-10 text-center">
           <li>
-            <a href="mailto:geetu@planandbooktrip.com" className="hover:text-white">
+            <Link href="mailto:geetu@planandbooktrip.com" className="hover:text-white">
               geetu@planandbooktrip.com
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="tel:+918368088945" className="hover:text-white">
+            <Link href="tel:+918368088945" className="hover:text-white">
               +91-8368088945
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="https://planandbooktrip.com" className="hover:text-white">
+            <Link href="https://planandbooktrip.com" className="hover:text-white">
               planandbooktrip.com
-            </a>
+            </Link>
           </li>
         </ul>
 
@@ -146,22 +147,22 @@ export default function Footer() {
         <div className="flex justify-center mb-4">
           <div className="flex flex-row justify-center gap-6">
             {[
-              { icon: "facebook", href: "#" },
-              { icon: "instagram", href: "#" },
-              { icon: "linkedin", href: "#" },
-              { icon: "youtube", href: "#" }
+              { icon: "facebook", href: "https://www.facebook.com/profile.php?id=61573902808542" },
+              { icon: "instagram", href: "https://www.instagram.com/planandbooktrip/" },
+              { icon: "youtube", href: "https://www.youtube.com/@PlanandBookTrip" }
             ].map((item, i) => (
-              <a
+              <Link
                 key={i}
                 href={item.href}
                 className="flex items-center p-2 rounded-full bg-white"
+                target="_blank"
               >
                 <img
                   src={`https://wanderon-images.gumlet.io/icons/${item.icon}.svg`}
                   alt={item.icon}
                   className="h-6 w-6"
                 />
-              </a>
+              </Link>
             ))}
           </div>
         </div>
