@@ -8,6 +8,7 @@ const BannerTwo = ({ heading, subHeading}) => {
       src="/banner/India-banner.webp"
       alt='Banner Image'
       fill
+      preload
       className='absolute object-cover'
       />
       <div className='absolute inset-0 bg-black/50'></div>

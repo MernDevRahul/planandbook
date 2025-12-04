@@ -3,6 +3,9 @@ import BannerTwo from '../components/BannerTwo'
 import DestinationTwo from '../components/DestinationTwo'
 import BestSeller from '../components/BestSeller'
 import WhyChoose from '../components/WhyChoose'
+import EventSection from '../components/EventSection'
+import Footer from '../components/Footer'
+import CtaOne from '../components/CtaOne'
 
 const Main = () => {
   return (
@@ -12,7 +15,10 @@ const Main = () => {
       />
       <DestinationTwo/>
       <BestSeller/>
+      <EventSection image={"https://wanderon-images.gumlet.io/ziro-t-d.png"} link="/"/>
       <WhyChoose/>
+      <CtaOne/>
+      <Footer/>
     </div>
   )
 }

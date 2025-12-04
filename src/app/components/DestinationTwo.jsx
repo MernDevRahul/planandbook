@@ -19,7 +19,7 @@ const DestinationTwo = () => {
       style={{ backgroundImage: "url('https://wanderon-images.gumlet.io/rajasthan_card.jpeg')" }}
     >
       <div className="absolute xl:bottom-[1vw] xl:left-[1.5vw] flex flex-col-reverse"></div>
-      <div className="absolute top-0 right-0 w-full h-full object-cover rounded-[1vw] -z-10 bg-[linear-gradient(rgb(254,230,11)_0%,rgb(1,175,209)_100%)] origin-center rotate-3"></div>
+      <div className="absolute top-0 right-0 w-full h-full object-cover rounded-[1vw] -z-10 bg-[linear-gradient(#FF7C5B_0%,#FF5BAE_100%)] origin-center rotate-3"></div>
     </div>
   </div>
 </Link>

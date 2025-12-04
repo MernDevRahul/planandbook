@@ -37,8 +37,8 @@ const CtaOne = () => {
                   <span className="text-gray-500 text-xl"></span>
                   <input
                     type="text"
-                    placeholder="e.g. John Smith"
-                    className="w-full outline-none text-gray-700 placeholder-gray-400"
+                    placeholder="Enter your name"
+                    className="w-full outline-none text-black placeholder-black"
                   />
                 </div>
               </div>
@@ -53,7 +53,7 @@ const CtaOne = () => {
                   <input
                     type="number"
                     placeholder="Enter your 10 digit number"
-                    className="w-full outline-none text-gray-700 placeholder-gray-400"
+                    className="w-full outline-none text-black placeholder-black"
                   />
                 </div>
               </div>
@@ -67,8 +67,8 @@ const CtaOne = () => {
                   <span className="text-gray-500 text-xl"></span>
                   <input
                     type="email"
-                    placeholder="john@example.com"
-                    className="w-full outline-none text-gray-700 placeholder-gray-400"
+                    placeholder="Enter your email id"
+                    className="w-full outline-none text-black placeholder-black"
                   />
                 </div>
               </div>
@@ -81,8 +81,8 @@ const CtaOne = () => {
                 <div className="flex items-start gap-3 border border-gray-300 rounded-lg px-4 py-3 mt-1">
                   <span className="text-gray-500 text-xl"></span>
                   <textarea
-                    placeholder="Any Message"
-                    className="w-full outline-none resize-none h-20 text-gray-700 placeholder-gray-400"
+                    placeholder="Write your message"
+                    className="w-full outline-none resize-none h-20 text-black placeholder-black"
                   />
                 </div>
               </div>
