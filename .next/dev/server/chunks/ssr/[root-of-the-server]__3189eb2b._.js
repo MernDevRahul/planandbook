@@ -27,7 +27,7 @@ const BannerTwo = ({ heading, subHeading })=>{
         className: "relative w-full h-[60vh] lg:h-[calc(100vh-120px)] sm:mt-[60px] md:mt-[60px] lg:mt-[120px]",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
-                src: "/banner/india-banner.webp",
+                src: "/banner/India-banner.webp",
                 alt: "Banner Image",
                 fill: true,
                 className: "absolute object-cover"

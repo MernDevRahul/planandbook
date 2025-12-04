@@ -5,7 +5,7 @@ const BannerTwo = ({ heading, subHeading}) => {
   return (
     <div className='relative w-full h-[60vh] lg:h-[calc(100vh-120px)] sm:mt-[60px] md:mt-[60px] lg:mt-[120px]'>
       <Image
-      src="/banner/india-banner.webp"
+      src="/banner/India-banner.webp"
       alt='Banner Image'
       fill
       className='absolute object-cover'

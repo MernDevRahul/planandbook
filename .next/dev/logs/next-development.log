@@ -1,3 +1,4 @@
-[00:00:01.716] Server  LOG      ✓ Ready in 1220ms
-[00:00:07.410] Server  LOG      ○ Compiling /india-packages ...
-[00:00:09.020] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:01.265] Server  LOG      ✓ Ready in 864ms
+[00:00:05.411] Server  LOG      ○ Compiling /india-packages ...
+[00:00:08.630] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:08.894] Browser WARN    Image with src "/logo/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
