@@ -2,6 +2,7 @@ import React from 'react'
 import BannerTwo from '../components/BannerTwo'
 import DestinationTwo from '../components/DestinationTwo'
 import BestSeller from '../components/BestSeller'
+import WhyChoose from '../components/WhyChoose'
 
 const Main = () => {
   return (
@@ -11,6 +12,7 @@ const Main = () => {
       />
       <DestinationTwo/>
       <BestSeller/>
+      <WhyChoose/>
     </div>
   )
 }

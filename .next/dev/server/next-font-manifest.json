@@ -1,6 +1,15 @@
 {
   "app": {
+    "[project]/src/app/about-us/page": [
+      "static/media/ce62453a442c7f35-s.p.a9507876.woff2"
+    ],
     "[project]/src/app/india-packages/page": [
+      "static/media/ce62453a442c7f35-s.p.a9507876.woff2"
+    ],
+    "[project]/src/app/page": [
+      "static/media/ce62453a442c7f35-s.p.a9507876.woff2"
+    ],
+    "[project]/src/app/privacy-policy/page": [
       "static/media/ce62453a442c7f35-s.p.a9507876.woff2"
     ]
   },
