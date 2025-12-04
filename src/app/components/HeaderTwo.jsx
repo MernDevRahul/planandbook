@@ -9,7 +9,7 @@ const HeaderTwo = () => {
           <div className="relative group cursor-pointer">
   {/* Trigger */}
   <div tabIndex={0} className="m-1">
-    <Link href="International-trips">International Trips</Link>
+    <Link href="/International-trips">International Trips</Link>
   </div>
 
   {/* Dropdown */}
@@ -52,7 +52,7 @@ const HeaderTwo = () => {
           <div className="relative group cursor-pointer">
   {/* Trigger */}
   <div tabIndex={0} className="m-1">
-    India Trips
+    <Link href="/india-packages">India Trips</Link>
   </div>
 
   {/* Dropdown */}
