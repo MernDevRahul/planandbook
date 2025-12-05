@@ -21,7 +21,7 @@ const ContactOne = () => {
 
           {/* BUTTON */}
           <button
-            className="bg-(--primary) text-black text-[10px] sm:text-[16px] font-medium px-8 sm:px-[60px] py-2 rounded-[10px] shadow-lg cursor-pointer">
+            className="bg-(--primary) text-white text-[10px] sm:text-[16px] font-medium px-8 sm:px-[60px] py-2 rounded-[10px] shadow-lg cursor-pointer">
             Connect Now
           </button>
         </div>

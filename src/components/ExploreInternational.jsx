@@ -126,7 +126,7 @@ const ExploreInternational = () => {
                   Discover the world, one destination at a time
                 </p>
 
-                <button className="bg-(--primary) hover:bg-(--primary) text-black font-semibold 2xl:px-15 2xl:py-3 lg:px-10 lg:py-1.5 rounded-lg shadow-md">
+                <button className="bg-(--primary) hover:bg-(--primary) text-white font-semibold 2xl:px-15 2xl:py-3 lg:px-10 lg:py-1.5 rounded-lg shadow-md">
                   Explore
                 </button>
               </div>
