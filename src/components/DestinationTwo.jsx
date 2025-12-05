@@ -6,7 +6,7 @@ const DestinationTwo = () => {
   return (
     <>
       <div className="flex flex-col flex-start items-center mt-[30px] mb-5 lg:mt-[70px] lg:mb-[30px]">
-        <h2 className="xl:mb-2 text-(--primary) text-2xl lg:text-5xl font-bold lg:leading-[47px]">
+        <h2 className="xl:mb-2 text-(--primary) text-2xl lg:text-5xl font-bold lg:leading-[47px] text-shadow-md text-shadow-black/35">
           Destinations
         </h2>
       </div>

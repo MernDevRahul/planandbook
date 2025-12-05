@@ -1,3 +1,4 @@
+import { CalendarSearch, Clock, Plane } from "lucide-react";
 import React from "react";
 
 const data = {
@@ -16,7 +17,7 @@ const BestSeller = () => {
     <>
       {/* Heading Section */}
       <div className="flex flex-col items-center mt-10 mb-6">
-        <h2 className="mb-2 text-(--primary) text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
+        <h2 className="mb-2 text-(--primary) text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-shadow-md text-shadow-black/35">
           Best Seller Packages
         </h2>
 
@@ -64,13 +65,13 @@ const BestSeller = () => {
 
               <div className="mt-2 sm:mt-3 text-[12px] sm:text-[13px] space-y-1">
                 <p className="flex items-center gap-2">
-                  <span>🕓</span> {data.nights}
+                  <span><Clock size={18} color={"var(--primary)"} strokeWidth={2.5}/></span> {data.nights}
                 </p>
                 <p className="flex items-center gap-2">
-                  <span>✈️</span> {data.airport}
+                  <span><Plane size={18} color={"var(--primary)"} strokeWidth={2.5}/></span> {data.airport}
                 </p>
                 <p className="flex items-center gap-2">
-                  <span>📅</span> {data.date}
+                  <span><CalendarSearch size={18} color={"var(--primary)"} strokeWidth={2.5}/></span> {data.date}
                 </p>
               </div>
             </div>

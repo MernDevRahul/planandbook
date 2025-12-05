@@ -9,7 +9,7 @@ const HeaderTwo = () => {
           <div className="relative group cursor-pointer">
   {/* Trigger */}
   <div tabIndex={0} className="m-1">
-    <Link href="/international-packages">International Trips</Link>
+    <Link href="/international-packages" className="text-lg">International Trips</Link>
   </div>
 
   {/* Dropdown */}
@@ -52,7 +52,7 @@ const HeaderTwo = () => {
           <div className="relative group cursor-pointer">
   {/* Trigger */}
   <div tabIndex={0} className="m-1">
-    <Link href="/india-packages">India Trips</Link>
+    <Link href="/india-packages" className="text-lg">India Trips</Link>
   </div>
 
   {/* Dropdown */}
@@ -84,7 +84,7 @@ const HeaderTwo = () => {
            <div className="relative group cursor-pointer">
   {/* Trigger */}
   <div tabIndex={0} className="m-1">
-    Group Trous
+    <Link href="/" className="text-lg">Group Trous</Link>
   </div>
 
   {/* Dropdown */}
@@ -117,8 +117,8 @@ const HeaderTwo = () => {
   </div>
 </div>
         </li>
-        <li className="cursor-pointer">Honeymoon Packages</li>
-        <li className="cursor-pointer">Coorporate Tours</li>
+        <li className="cursor-pointer"><Link href="/" className="text-lg">Honeymoon Packages</Link></li>
+        <li className="cursor-pointer"><Link href="/" className="text-lg">Coorporate Tours</Link></li>
         {/* <li className="flex items-center gap-0.5 cursor-pointer">
           <div>
             <img src="/png/gift.png" alt="gift-png" className="h-4" />
@@ -126,7 +126,7 @@ const HeaderTwo = () => {
           <div>Gifts Cards</div>
         </li> */}
         <li className="cursor-pointer flex items-center relative">
-          <div>Events & Festivals</div>
+          <div><Link href="/" className="text-lg">Events & Festivals</Link></div>
           <p className="absolute text-yellow-300 font-semibold -top-1 -right-[30px] text-[12px]">New</p>
         </li>
       </ul>

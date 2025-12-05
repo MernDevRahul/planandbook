@@ -1,5 +1,5 @@
 "use client";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import { CalendarSearch, ChevronLeft, ChevronRight, Clock, Plane } from "lucide-react";
 import React, { useRef } from "react";
 
 const items = [
@@ -203,13 +203,13 @@ const Upcoming = () => {
 
                 <div className="mt-3 text-[12px] sm:text-[13px] space-y-1">
                   <p className="flex items-center gap-2">
-                    <span>🕓</span> {item.nights}
+                    <span><Clock size={18} color={"var(--primary)"} strokeWidth={2.5}/></span> {item.nights}
                   </p>
                   <p className="flex items-center gap-2">
-                    <span>✈️</span> {item.airport}
+                    <span><Plane size={18} color={"var(--primary)"} strokeWidth={2.5}/></span> {item.airport}
                   </p>
                   <p className="flex items-center gap-2">
-                    <span>📅</span> {item.date}
+                    <span><CalendarSearch size={18} color={"var(--primary)"} strokeWidth={2.5}/></span> {item.date}
                   </p>
                 </div>
               </div>
