@@ -18,7 +18,7 @@ const BannerTwo = ({ heading, subHeading}) => {
         <h1 className='text-2xl lg:text-4xl xl:text-6xl font-bold drop-shadow-lg'>
             {heading}
         </h1>
-        <div className='text-lg lg:text-[28px] xl:text-[32px] mt-3 text-(--primary) font-semibold w-screen'>
+        <div className='text-lg lg:text-[28px] xl:text-[40px] mt-3 text-(--primary) font-bold w-screen text-shadow-md text-shadow-white/30'>
             {subHeading}
         </div>
         <span className="border-r-2 border-yellow-300 animate-pulse ml-1"></span>

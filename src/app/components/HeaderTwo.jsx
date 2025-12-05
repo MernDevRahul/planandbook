@@ -13,8 +13,8 @@ const HeaderTwo = () => {
   </div>
 
   {/* Dropdown */}
-  <div className="absolute left-0 top-full opacity-0 invisible group-hover:opacity-100 group-hover:visible bg-white text-black shadow-lg rounded-md mt-3 w-[550px] p-6 transition-all duration-300">
-    <ul className="grid grid-cols-3 gap-y-2 gap-x-10">
+  <div className="absolute left-0 top-full opacity-0 invisible group-hover:opacity-100 group-hover:visible bg-white text-black shadow-lg rounded-md mt-3 w-[500px] p-6 transition-all duration-300">
+    <ul className="grid grid-cols-3 gap-y-2">
 
       <li><a className="block no-underline text-[13px] border border-transparent leading-5hover:bg-[#01aed11f] hover:text-(--primary)  hover:border hover:border-(--primary) p-1 rounded">Europe</a></li>
       <li><a className="block no-underline text-[13px] border border-transparent leading-5hover:bg-[#01aed11f] hover:text-(--primary)  hover:border hover:border-(--primary) p-1 rounded">Thailand</a></li>
@@ -56,8 +56,8 @@ const HeaderTwo = () => {
   </div>
 
   {/* Dropdown */}
-  <div className="absolute left-0 top-full opacity-0 invisible group-hover:opacity-100 group-hover:visible bg-white text-black shadow-lg rounded-md mt-3 w-[450px] p-6 transition-all duration-300">
-    <ul className="grid grid-cols-2 gap-y-3 gap-x-10">
+  <div className="absolute left-0 top-full opacity-0 invisible group-hover:opacity-100 group-hover:visible bg-white text-black shadow-lg rounded-md mt-3 w-[400px] p-6 transition-all duration-300">
+    <ul className="grid grid-cols-2 gap-y-3">
 
       <li><a className="block no-underline text-[13px] border border-transparent leading-5hover:bg-[#01aed11f] hover:text-(--primary)  hover:border hover:border-(--primary) p-1 rounded">Rajasthan</a></li>
       <li><a className="block no-underline text-[13px] border border-transparent leading-5hover:bg-[#01aed11f] hover:text-(--primary)  hover:border hover:border-(--primary) p-1 rounded">Kashmir</a></li>
@@ -89,7 +89,7 @@ const HeaderTwo = () => {
 
   {/* Dropdown */}
   <div className="absolute left-0 top-full opacity-0 invisible group-hover:opacity-100 group-hover:visible bg-white text-black shadow-lg rounded-md mt-3 w-[490px] p-6 transition-all duration-300">
-    <ul className="grid grid-cols-3 gap-y-3 gap-x-10">
+    <ul className="grid grid-cols-3 gap-y-3">
 
       <li><a className="block no-underline text-[13px] border border-transparent leading-5hover:bg-[#01aed11f] hover:text-(--primary)  hover:border hover:border-(--primary) p-1 rounded">Europe</a></li>
       <li><a className="block no-underline text-[13px] border border-transparent leading-5hover:bg-[#01aed11f] hover:text-(--primary)  hover:border hover:border-(--primary) p-1 rounded">Bali</a></li>
