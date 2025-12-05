@@ -7,6 +7,7 @@ import EventSection from '../components/EventSection'
 import Footer from '../components/Footer'
 import CtaOne from '../components/CtaOne'
 import Faq from '../components/Faq'
+import AllPackages from '../components/AllPackages'
 const data=[
   {
     question:"1) Which is the best package in India?",
@@ -59,6 +60,7 @@ const Main = () => {
       <EventSection image={"https://wanderon-images.gumlet.io/ziro-t-d.png"} link="/"/>
       <DestinationTwo/>
       <BestSeller/>
+      <AllPackages/>
       <WhyChoose/>
       <Faq data={data}/>
       <CtaOne/>
