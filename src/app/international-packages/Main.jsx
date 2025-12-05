@@ -56,9 +56,9 @@ const Main = () => {
     <div className='overflow-x-hidden'>
       <BannerTwo heading="International Trips That Turn Dreams Into Destinations"
       subHeading="Choose the experience made for you"
-      image="/banner/India-banner.webp"
+      image="/banner/international-banner.webp"
       />
-      <EventSection image={"https://wanderon-images.gumlet.io/ziro-t-d.png"} link="/"/>
+      <EventSection image={"https://wanderon-images.gumlet.io/beer-t-d.png"} link="/"/>
       <DestinationTwo/>
       <BestSeller/>
       <AllPackages/>
