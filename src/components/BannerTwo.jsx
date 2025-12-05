@@ -1,11 +1,11 @@
 import Image from 'next/image'
 import React from 'react'
 
-const BannerTwo = ({ heading, subHeading}) => {
+const BannerTwo = ({ heading, subHeading, image}) => {
   return (
     <div className='relative w-full h-[60vh] lg:h-[calc(100vh-120px)] sm:mt-[60px] md:mt-[60px] lg:mt-[120px]'>
       <Image
-      src="/banner/India-banner.webp"
+      src={image}
       alt='Banner Image'
       fill
       preload

@@ -1,11 +1,11 @@
 import React from 'react'
-import AboutBanner from '../components/AboutBanner'
-import AboutUsOne from '../components/AboutUsOne'
-import AboutUsTwo from '../components/AboutUsTwo'
-import TeamOne from '../components/TeamOne'
-import Footer from '../components/Footer'
-import BrandOne from '../components/BrandOne'
-import CtaOne from '../components/CtaOne'
+import AboutBanner from '../../components/AboutBanner'
+import AboutUsOne from '../../components/AboutUsOne'
+import AboutUsTwo from '../../components/AboutUsTwo'
+import TeamOne from '../../components/TeamOne'
+import Footer from '../../components/Footer'
+import BrandOne from '../../components/BrandOne'
+import CtaOne from '../../components/CtaOne'
 
 const Main = () => {
   return (

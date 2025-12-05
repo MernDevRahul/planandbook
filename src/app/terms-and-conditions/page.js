@@ -1,6 +1,6 @@
 import React from 'react'
 import Main from './Main'
-import Footer from '../components/Footer'
+import Footer from '../../components/Footer'
 
 const page = () => {
   return (

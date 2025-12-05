@@ -54,8 +54,8 @@ const data=[
 const Main = () => {
   return (
     <div className='overflow-x-hidden'>
-      <BannerTwo heading="Best India Holiday Packages at Unbeatable Prices"
-      subHeading="Tailored Trips for Every Traveler"
+      <BannerTwo heading="International Trips That Turn Dreams Into Destinations"
+      subHeading="Choose the experience made for you"
       image="/banner/India-banner.webp"
       />
       <EventSection image={"https://wanderon-images.gumlet.io/ziro-t-d.png"} link="/"/>

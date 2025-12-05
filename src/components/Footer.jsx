@@ -121,8 +121,8 @@ export default function Footer() {
           Plan and Book Trip
         </h3>
 
-        <p className="text-center text-[14px] leading-[22px] w-full lg:w-[60%] mx-auto">
-          Dwarka Mor, New Delhi
+        <p className="text-center text-[14px] leading-[22px] w-full lg:w-[60%] mx-auto mt-2">
+          <Link href="https://www.google.com/maps/place/Plan+and+Book+Trip/@28.5612872,77.0476762,17z/data=!3m1!4b1!4m6!3m5!1s0x211676f5a5de6d51:0x73b273abf7a6eddf!8m2!3d28.5612825!4d77.0502511!16s%2Fg%2F11yq2vhxv7?entry=ttu&g_ep=EgoyMDI1MTIwMi4wIKXMDSoASAFQAw%3D%3D" target="_blank">Flat No C1 Hno 88 Block A Pochanpur, Sector 23, <br /> Dwarka, Delhi-110077</Link>
         </p>
 
         <ul className="my-6 flex flex-col lg:flex-row justify-center gap-3 lg:gap-10 text-center">

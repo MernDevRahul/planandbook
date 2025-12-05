@@ -1,12 +1,11 @@
 import React from 'react'
+import BannerTwo from 'src/components/BannerTwo'
 import Main from './Main'
-import Footer from '../../components/Footer'
 
 const page = () => {
   return (
     <div>
-      <Main/>
-      <Footer/>
+        <Main/>
     </div>
   )
 }
