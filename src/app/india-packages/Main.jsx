@@ -8,6 +8,7 @@ import Footer from '../../components/Footer'
 import CtaOne from '../../components/CtaOne'
 import Faq from '../../components/Faq'
 import AllPackages from '../../components/AllPackages'
+import Testimonials from 'src/components/Testimonials'
 const data=[
   {
     question:"1) Which is the best package in India?",
@@ -63,6 +64,7 @@ const Main = () => {
       <BestSeller/>
       <AllPackages/>
       <WhyChoose/>
+      <Testimonials/>
       <Faq data={data}/>
       <CtaOne/>
       <Footer/>
