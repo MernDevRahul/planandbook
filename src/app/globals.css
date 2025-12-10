@@ -1,0 +1,28 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+/* Custom CSS variables */
+:root {
+  /* --primary: #FF7C5B; */
+  --primary: #01afd1;
+  --secondary: #3b3328;
+  --accent: #4f46e5;
+}
+
+body { 
+  /* color: antiquewhite; */
+  background-color: rgb(241, 241, 241);
+  font-family: var(--font-roboto);
+  padding: 0;
+  margin: 0;
+}
+
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE, Edge */
+  scrollbar-width: none;     /* Firefox */
+}
