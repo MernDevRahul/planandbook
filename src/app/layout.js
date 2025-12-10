@@ -20,7 +20,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en"><head>
         {/* OR */}
-        <link rel="icon" href="/logo/logo.png" type="image/png" />
+        <link rel="icon" href="/logo/logo.png" sizes="180x180" type="image/png" />
       </head>
       <body className={`${roboto.variable} antialiased pt-[60px] lg:pt-[120px]`}>
         <Header/>

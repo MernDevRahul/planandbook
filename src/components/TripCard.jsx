@@ -1,12 +1,14 @@
-import { ArrowUpRight, Calendar, Plane } from 'lucide-react'
-import Image from 'next/image'
-import Link from 'next/link'
-import React from 'react'
+import { ArrowUpRight, Calendar, Plane } from "lucide-react";
+import Image from "next/image";
+import Link from "next/link";
+import React from "react";
 
-const TripCard = ({data}) => {
+const TripCard = ({ data }) => {
   return (
-   <Link href="/" className="bg-white rounded-xl group shadow flex gap-4 hover:shadow-lg transition">
-
+    <Link
+      href="/"
+      className="bg-white rounded-xl group shadow flex gap-4 hover:shadow-lg transition"
+    >
       {/* IMAGE */}
       <div className="relative w-[170px] h-[150px] rounded-l-xl overflow-hidden">
         <Image src={data.img} alt="trip" fill className="object-cover" />
@@ -26,18 +28,26 @@ const TripCard = ({data}) => {
 
         {/* Price */}
         <div className="mt-2 flex items-center gap-2">
-          <span className="text-black/70 line-through decoration-red-400 decoration-2 text-sm">₹{data.oldPrice}</span>
-          <span className="text-lg font-bold text-(--primary) text-shadow-xs">₹{data.newPrice}</span>
+          <span
+            className="relative text-black/70 text-sm inline-block before:content-[''] before:absolute before:left-0 before:top-1/2 before:w-full before:h-0.5 before:bg-red-600 before:-rotate-6 before:-translate-y-1/2" >
+            ₹{data.oldPrice}
+          </span>
+
+          <span className="text-lg font-bold text-(--primary) text-shadow-xs">
+            ₹{data.newPrice}
+          </span>
         </div>
       </div>
 
       {/* Arrow Button */}
       <button className="w-10 h-10 rounded-full border border-(--primary)  flex items-center justify-center group-hover:bg-(--primary) transition m-4">
-        <ArrowUpRight size={18} className='text-(--primary) group-hover:text-white' />
+        <ArrowUpRight
+          size={18}
+          className="text-(--primary) group-hover:text-white"
+        />
       </button>
-
     </Link>
-  )
-}
+  );
+};
 
-export default TripCard
+export default TripCard;
