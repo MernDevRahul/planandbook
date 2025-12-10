@@ -227,10 +227,10 @@ const trips = [
 ];
 
 const UpcomingTrip = () => {
-  const [duration, setDuration] = useState([1, 14]);
+  const [duration, setDuration] = useState([0, 14]);
   const [budget, setBudget] = useState([8000, 300000]);
   return (
-    <div className="w-full mx-auto px-4 xl:px-12 py-8 flex flex-col md:flex-row gap-6">
+    <div className="w-full mx-auto px-4 xl:px-12 py-8 flex flex-col md:flex-row gap-6 bg-white">
       {/* LEFT STICKY FILTERS */}
       <div className="w-[380px] hidden md:block sticky top-35 h-fit shrink-0">
         <FiltersPanel
@@ -243,7 +243,7 @@ const UpcomingTrip = () => {
 
       {/* RIGHT SCROLLABLE CONTENT */}
       <div className="flex-1">
-        <div className="flex flex-col flex-start mb-5 mx-2 mt-1 lg:mb-[30px]">
+        <div className="flex flex-col flex-start mb-5 mx-2 mt-1 lg:mb-[30px] sticky top-35 z-10 ">
         <h2 className="xl:mb-2 text-(--primary) text-2xl lg:text-4xl font-bold lg:leading-[47px] text-shadow-md text-shadow-black/15">
           All Upcoming Trips
         </h2>
@@ -256,6 +256,7 @@ const UpcomingTrip = () => {
           ))}
         </div>
       </div>
+
     </div>
   );
 };

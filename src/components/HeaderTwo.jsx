@@ -87,7 +87,7 @@ const HeaderTwo = () => {
            <div className="relative group cursor-pointer">
   {/* Trigger */}
   <div tabIndex={0} className="m-1 flex items-center justify-center gap-1">
-    <Link href="/" className="text-[15px]">Group Trous</Link>
+    <Link href="/upcoming-trips" className="text-[15px]">Group Trous</Link>
     <ChevronDown size={18} className="transition-transform duration-400 group-hover:rotate-180"/>
   </div>
 

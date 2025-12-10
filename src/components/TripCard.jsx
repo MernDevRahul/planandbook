@@ -5,16 +5,16 @@ import React from 'react'
 
 const TripCard = ({data}) => {
   return (
-   <Link href="/" className="bg-white rounded-xl shadow flex gap-4 p-4 hover:shadow-lg transition">
+   <Link href="/" className="bg-white rounded-xl group shadow flex gap-4 hover:shadow-lg transition">
 
       {/* IMAGE */}
-      <div className="relative w-[180px] h-[140px] rounded-lg overflow-hidden">
+      <div className="relative w-[170px] h-[150px] rounded-l-xl overflow-hidden">
         <Image src={data.img} alt="trip" fill className="object-cover" />
       </div>
 
       {/* TEXT */}
-      <div className="flex flex-col flex-1">
-        <h3 className="font-semibold text-[15px] line-clamp-2">{data.title}</h3>
+      <div className="flex flex-col flex-1 pt-4">
+        <h3 className="font-semibold text-[18px] line-clamp-2">{data.title}</h3>
 
         <p className="text-sm text-gray-600 mt-1 flex items-center gap-2">
           <Plane size={15} /> {data.airport}
@@ -32,8 +32,8 @@ const TripCard = ({data}) => {
       </div>
 
       {/* Arrow Button */}
-      <button className="w-10 h-10 rounded-full border flex items-center justify-center hover:bg-black hover:text-white transition">
-        <ArrowUpRight size={18} />
+      <button className="w-10 h-10 rounded-full border border-(--primary)  flex items-center justify-center group-hover:bg-(--primary) transition m-4">
+        <ArrowUpRight size={18} className='text-(--primary) group-hover:text-white' />
       </button>
 
     </Link>
