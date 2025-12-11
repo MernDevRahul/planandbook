@@ -16,7 +16,7 @@ const TripCard = ({ data }) => {
 
       {/* TEXT */}
       <div className="flex flex-col flex-1 pt-4">
-        <h3 className="font-semibold text-[18px] line-clamp-2">{data.title}</h3>
+        <h3 className="font-semibold text-[18px] line-clamp-2 text-black">{data.title}</h3>
 
         <p className="text-sm text-gray-600 mt-1 flex items-center gap-2">
           <Plane size={15} /> {data.airport}
