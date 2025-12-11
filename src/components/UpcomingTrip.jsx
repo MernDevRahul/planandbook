@@ -243,7 +243,7 @@ const UpcomingTrip = () => {
 
       {/* RIGHT SCROLLABLE CONTENT */}
       <div className="flex-1">
-        <div className="flex flex-col flex-start mb-5 mt-1 lg:mb-[30px] w-full bg-white sticky top-30 z-10 px-4">
+        <div className="flex flex-col flex-start mb-5 mt-1 lg:mb-[30px] w-full">
         <h2 className="xl:mb-2 text-(--primary) text-2xl lg:text-4xl font-bold lg:leading-[47px] text-shadow-md text-shadow-black/15">
           All Upcoming Trips
         </h2>
