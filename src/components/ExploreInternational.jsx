@@ -133,7 +133,7 @@ const ExploreInternational = () => {
 
               {/* Video */}
               <video loop autoPlay muted playsInline preload="auto" className="w-full h-full object-cover">
-                <source src="https://wanderon-video.gumlet.io/category-section/india_(1)+(540p).mp4" />
+                <source src="https://wanderon-video.gumlet.io/category-section/international_(1)+(540p).mp4" />
               </video>
             </div>
 
