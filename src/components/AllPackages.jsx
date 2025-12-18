@@ -1,6 +1,8 @@
-"use client"
+"use client";
 import { CalendarSearch, Clock, Plane } from "lucide-react";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import { useDispatch, useSelector } from 'react-redux'
+import { AllPackagesThunk } from "src/app/redux/features/IndiaSlice";
 
 const data = {
   img: "/banner/rajasthan.jpg",
@@ -14,12 +16,25 @@ const data = {
 };
 
 const AllPackages = () => {
+  const { allPackages, loading } = useSelector((state)=>state.india);
   const totalCards = 50; // total dummy cards
   const [visibleCards, setVisibleCards] = useState(6);
+
+  console.log(allPackages)
 
   const loadMore = () => {
     setVisibleCards((prev) => prev + 6);
   };
+
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    console.log("object");
+    const data = async () => {
+      await dispatch(AllPackagesThunk("India-Trips"));
+    };
+    data();
+  }, [dispatch]);
 
   return (
     <>
@@ -38,29 +53,27 @@ const AllPackages = () => {
 
       {/* Responsive Grid */}
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6 md:gap-8 lg:gap-10 px-4 sm:px-6 md:px-8 lg:px-5 xl:px-[10%] mb-10">
-
-        {[...Array(visibleCards)].map((_, index) => (
+        {allPackages?.map((packageItem, index) => (
           <a
             key={index}
-            className="group min-w-[140px] sm:min-w-40 md:min-w-[200px] lg:min-w-[230px] h-[300px] sm:h-[330px] md:h-[360px] lg:h-[420px] rounded-xl overflow-hidden bg-white shadow-lg relative"
+            className="group min-w-[140px] sm:min-w-40 md:min-w-[200px] lg:min-w-[230px] h-[400px] sm:h-[400px] md:h-[450px] lg:h-[500px] rounded-xl overflow-hidden bg-white shadow-lg relative"
           >
             {/* IMAGE */}
             <div className="relative w-full h-full">
               <img
-                src={data.img}
-                alt={data.title}
+                src={`http://localhost:6544/${packageItem?.thumbnail}`}
+                alt={packageItem?.title}
                 className="w-full h-full object-cover transition-transform duration-500 ease-in-out group-hover:scale-110"
               />
 
               <div className="absolute inset-0 bg-black/25"></div>
 
               {/* PRICE TAG */}
-              <div
-                className="absolute top-3 right-1 sm:right-3 bg-yellow-400 px-1 sm:px-3 py-1 rounded-full text-[8px] sm:text-[11px] font-semibold flex items-center gap-1">
+              <div className="absolute top-3 right-1 sm:right-3 bg-yellow-400 px-1 sm:px-3 py-1 rounded-full text-[8px] sm:text-[11px] font-semibold flex items-center gap-1">
                 <span className="line-through text-black/60">
-                  ₹{data.oldPrice}/-
+                  ₹{packageItem?.oldPrice}/-
                 </span>
-                <span className="text-black">₹{data.newPrice}/-</span>
+                <span className="text-black">₹{packageItem?.newPrice}/-</span>
                 <span className="text-black/80">Onwards</span>
               </div>
             </div>
@@ -68,18 +81,39 @@ const AllPackages = () => {
             {/* TEXT OVERLAY */}
             <div className="p-3 sm:p-4 text-white bg-linear-to-t from-black/90 to-transparent absolute bottom-0 left-0 w-full">
               <h2 className="text-sm sm:text-[15px] font-semibold">
-                {data.title}
+                {packageItem?.title}
               </h2>
 
               <div className="mt-2 sm:mt-3 text-[12px] sm:text-[13px] space-y-1">
                 <p className="flex items-center gap-2">
-                  <span><Clock size={18} color={"var(--primary)"} strokeWidth={2.5}/></span> {data.nights}
+                  <span>
+                    <Clock
+                      size={18}
+                      color={"var(--primary)"}
+                      strokeWidth={2.5}
+                    />
+                  </span>{" "}
+                  {packageItem?.itineraries.length} Days / {packageItem?.itineraries.length - 1} Nights
                 </p>
                 <p className="flex items-center gap-2">
-                  <span><Plane size={18} color={"var(--primary)"} strokeWidth={2.5}/></span> {data.airport}
+                  <span>
+                    <Plane
+                      size={18}
+                      color={"var(--primary)"}
+                      strokeWidth={2.5}
+                    />
+                  </span>{" "}
+                  {packageItem?.pickupLocation} - {packageItem?.dropLocation}
                 </p>
                 <p className="flex items-center gap-2">
-                  <span><CalendarSearch size={18} color={"var(--primary)"} strokeWidth={2.5}/></span> {data.date}
+                  <span>
+                    <CalendarSearch
+                      size={18}
+                      color={"var(--primary)"}
+                      strokeWidth={2.5}
+                    />
+                  </span>{" "}
+                  {data.date}
                 </p>
               </div>
             </div>

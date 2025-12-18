@@ -46,9 +46,7 @@ const BestSeller = () => {
 
               {/* PRICE TAG */}
               <div
-                className="absolute top-3 right-1 sm:right-3 bg-yellow-400 px-1 sm:px-3 py-1 rounded-full 
-                text-[8px] sm:text-[11px] font-semibold flex items-center gap-1"
-              >
+                className="absolute top-3 right-1 sm:right-3 bg-yellow-400 px-1 sm:px-3 py-1 rounded-full text-[8px] sm:text-[11px] font-semibold flex items-center gap-1">
                 <span className="line-through text-black/60">
                   ₹{data.oldPrice}/-
                 </span>

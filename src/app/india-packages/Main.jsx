@@ -1,4 +1,5 @@
-import React from 'react'
+"use client"
+import React, { useEffect } from 'react'
 import BannerTwo from '../../components/BannerTwo'
 import DestinationTwo from '../../components/DestinationTwo'
 import BestSeller from '../../components/BestSeller'
@@ -9,7 +10,8 @@ import CtaOne from '../../components/CtaOne'
 import Faq from '../../components/Faq'
 import AllPackages from '../../components/AllPackages'
 import Testimonials from 'src/components/Testimonials'
-const data=[
+
+const Faqs=[
   {
     question:"1) Which is the best package in India?",
     answer:"That would depend on what you are looking for: mountains, beaches, culture, or adventure. The most popular choices include Kashmir for natural beauty, Ladakh for adventure, Himachal for scenic hills, Rajasthan for heritage, and Andaman for beaches. We also customize packages to fit your travel style and budget."
@@ -60,12 +62,12 @@ const Main = () => {
       image="/banner/India-banner.webp"
       />
       <EventSection image={"https://wanderon-images.gumlet.io/ziro-t-d.png"} link="/"/>
-      <DestinationTwo/>
+      <DestinationTwo catergory="India-Trips"/>
       <BestSeller/>
       <AllPackages/>
       <WhyChoose/>
-      <Testimonials/>
-      <Faq data={data}/>
+      {/* <Testimonials/> */}
+      <Faq data={Faqs}/>
       <CtaOne/>
       <Footer/>
     </div>
