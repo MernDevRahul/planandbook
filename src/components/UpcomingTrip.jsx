@@ -232,7 +232,7 @@ const UpcomingTrip = () => {
   return (
     <div className="w-full mx-auto px-4 xl:px-12 py-8 flex flex-col md:flex-row gap-6 bg-white">
       {/* LEFT STICKY FILTERS */}
-      <div className="w-[380px] hidden md:block sticky top-35 h-fit shrink-0">
+      <div className="w-[380px] hidden md:block sticky top-35 h-fit shrink-0 z-50">
         <FiltersPanel
           duration={duration}
           setDuration={setDuration}
@@ -250,7 +250,7 @@ const UpcomingTrip = () => {
         {/* <hr /> */}
       </div>
 
-        <div className="grid lg:grid-cols-1 xl:grid-cols-2 gap-5">
+        <div className="grid lg:grid-cols-1 xl:grid-cols-2 gap-5 z-10">
           {trips.map((trip) => (
             <TripCard key={trip.id} data={trip} />
           ))}

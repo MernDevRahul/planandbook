@@ -8,12 +8,12 @@ const Faq = ({data}) => {
       </h2>
       <div className="px-4 lg:px-[20vw]">
         {data.map((item, index)=>(
-            <div key={index} className="collapse collapse-arrow bg-base-100 border border-(--primary) shadow-lg mb-2">
+            <div key={index} className="collapse collapse-arrow bg-white border border-(--primary) shadow-lg mb-2">
           <input type="radio" name="my-accordion-2" defaultChecked={index===0} />
-          <div className="collapse-title font-semibold text-md lg:text-xl text-black/70">
+          <div className="collapse-title font-bold text-md lg:text-xl text-black/70">
             {item.question}
           </div>
-          <div className="collapse-content text-sm lg:text-md text-blacl/50">
+          <div className="collapse-content text-md lg:text-md text-black/70 font-medium">
             {item.answer}
           </div>
         </div>
@@ -23,4 +23,4 @@ const Faq = ({data}) => {
   )
 }
 
-export default Faq
+export default Faq;

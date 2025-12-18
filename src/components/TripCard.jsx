@@ -10,7 +10,7 @@ const TripCard = ({ data }) => {
       className="bg-white rounded-xl group shadow flex gap-4 hover:shadow-lg transition"
     >
       {/* IMAGE */}
-      <div className="relative w-[170px] h-[150px] rounded-l-xl overflow-hidden">
+      <div className="relative w-[170px] h-[150px] rounded-l-xl overflow-hidden z-0">
         <Image src={data.img} alt="trip" fill className="object-cover" />
       </div>
 

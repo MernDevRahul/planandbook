@@ -51,3 +51,48 @@ body {
   border-radius: 50%;
   cursor: pointer;
 }
+
+/* Custom checkbox: white box, primary-color checkmark when checked */
+.custom-checkbox {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  background: #ffffff;
+  border: 1px solid #cbd5e1; /* tailwind gray-300 */
+  border-radius: 3px;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.custom-checkbox:focus {
+  outline: 2px solid rgba(1,175,209,0.15);
+  outline-offset: 2px;
+}
+
+.custom-checkbox::after {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 1px;
+  width: 5px;
+  height: 9px;
+  border: 2px solid transparent;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  opacity: 0;
+}
+
+.custom-checkbox:checked {
+  /* keep box white but highlight border */
+  background: #ffffff;
+  border-color: var(--primary);
+}
+
+.custom-checkbox:checked::after {
+  border-color: var(--primary); /* checkmark color */
+  opacity: 1;
+}
