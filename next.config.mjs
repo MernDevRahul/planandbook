@@ -20,6 +20,10 @@ const nextConfig = {
         protocol: "https",
         hostname: "wanderon-images.gumlet.io",
       },
+      {
+        protocol: "http",
+        hostname: "localhost",
+      },
     ],
   },
 };

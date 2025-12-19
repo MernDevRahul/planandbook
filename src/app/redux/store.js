@@ -1,12 +1,12 @@
-import { configureStore } from "@reduxjs/toolkit";
-import counterReducer from "./features/counterSlice";
+import { configureStore } from "@reduxjs/toolkit"; 
 import packagesReducer from "./features/packageSlice";
 import destinationReducer from "./features/destinationsSlice";
+import placeReducer from "./features/placeSlice";
 
 export const store = configureStore({
     reducer:{
-        counter: counterReducer,
         packages: packagesReducer,
         destination: destinationReducer,
+        place:placeReducer,
     }
 })

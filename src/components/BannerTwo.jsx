@@ -2,11 +2,14 @@ import Image from 'next/image'
 import React from 'react'
 
 const BannerTwo = ({ heading, subHeading, image}) => {
+  console.log(image)
   return (
-    <div className='relative w-full h-[60vh] lg:h-[calc(100vh-120px)] sm:mt-[60px] md:mt-[60px] lg:mt-[120px]'>
+    <>
+    { image !== undefined && <div className='relative w-full h-[60vh] lg:h-[calc(100vh-120px)] sm:mt-[60px] md:mt-[60px] lg:mt-[120px]'>
       <Image
       src={image}
       alt='Banner Image'
+      unoptimized
       fill
       preload
       className='absolute object-cover'
@@ -66,7 +69,8 @@ const BannerTwo = ({ heading, subHeading, image}) => {
 
       </div>
       </div>
-    </div>
+    </div>}
+    </>
   )
 }
 

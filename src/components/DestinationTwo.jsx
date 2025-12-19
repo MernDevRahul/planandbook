@@ -26,7 +26,6 @@ const DestinationTwo = ({ catergory }) => {
       console.log(error);
     }
   }, [dispatch]);
-  console.log("1")
   return (
     <>
       <div className="flex flex-col flex-start items-center mt-[30px] mb-5 lg:mt-[70px] lg:mb-[30px]">
