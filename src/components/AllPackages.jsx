@@ -1,8 +1,9 @@
 "use client";
 import { CalendarSearch, Clock, Plane } from "lucide-react";
 import React, { useEffect, useState } from "react";
-import { useDispatch, useSelector } from 'react-redux'
-import { AllPackagesThunk } from "src/app/redux/features/IndiaSlice";
+import { useDispatch, useSelector } from "react-redux";
+import { toast } from "sonner";
+import { AllPackagesThunk } from "src/app/redux/features/packageSlice";
 
 const data = {
   img: "/banner/rajasthan.jpg",
@@ -16,12 +17,9 @@ const data = {
 };
 
 const AllPackages = () => {
-  const { allPackages, loading } = useSelector((state)=>state.india);
+  const { allPackages, loading } = useSelector((state) => state.packages);
   const totalCards = 50; // total dummy cards
   const [visibleCards, setVisibleCards] = useState(6);
-
-  console.log(allPackages)
-
   const loadMore = () => {
     setVisibleCards((prev) => prev + 6);
   };
@@ -29,7 +27,11 @@ const AllPackages = () => {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    console.log("object");
+    toast.success("Loading all packages...",{
+      duration: 1000,
+      position: "bottom-right",
+      style: { background: "var(--primary)", color: "white" },
+    })
     const data = async () => {
       await dispatch(AllPackagesThunk("India-Trips"));
     };
@@ -38,6 +40,8 @@ const AllPackages = () => {
 
   return (
     <>
+    { allPackages && (
+      <>
       {/* Heading Section */}
       <div className="flex flex-col items-center mt-10 mb-6">
         <h2 className="mb-2 text-(--primary) text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-shadow-md text-shadow-black/35">
@@ -56,7 +60,7 @@ const AllPackages = () => {
         {allPackages?.map((packageItem, index) => (
           <a
             key={index}
-            className="group min-w-[140px] sm:min-w-40 md:min-w-[200px] lg:min-w-[230px] h-[400px] sm:h-[400px] md:h-[450px] lg:h-[500px] rounded-xl overflow-hidden bg-white shadow-lg relative"
+            className="group min-w-[140px] sm:min-w-40 md:min-w-[200px] lg:min-w-[230px] h-[300px] sm:h-[400px] md:h-[450px] lg:h-[500px] rounded-xl overflow-hidden bg-white shadow-lg relative"
           >
             {/* IMAGE */}
             <div className="relative w-full h-full">
@@ -67,6 +71,13 @@ const AllPackages = () => {
               />
 
               <div className="absolute inset-0 bg-black/25"></div>
+
+              {/* TRIP TAG */}
+              {packageItem?.tripTag && (
+                <div className="absolute top-10 right-3 xl:top-3 xl:left-3 w-fit bg-[#C6F6D5] text-green-900 text-[8px] sm:text-[11px] font-semibold px-3 py-1 rounded-full shadow-md">
+                  {packageItem?.tripTag}
+                </div>
+              )}
 
               {/* PRICE TAG */}
               <div className="absolute top-3 right-1 sm:right-3 bg-yellow-400 px-1 sm:px-3 py-1 rounded-full text-[8px] sm:text-[11px] font-semibold flex items-center gap-1">
@@ -93,7 +104,8 @@ const AllPackages = () => {
                       strokeWidth={2.5}
                     />
                   </span>{" "}
-                  {packageItem?.itineraries.length} Days / {packageItem?.itineraries.length - 1} Nights
+                  {packageItem?.itineraries.length} Days /{" "}
+                  {packageItem?.itineraries.length - 1} Nights
                 </p>
                 <p className="flex items-center gap-2">
                   <span>
@@ -132,6 +144,8 @@ const AllPackages = () => {
           </button>
         </div>
       )}
+    </>
+    )}
     </>
   );
 };

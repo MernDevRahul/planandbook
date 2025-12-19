@@ -6,7 +6,6 @@ export const AllPackagesThunk = createAsyncThunk("packages/AllPackages",
     async (category_name, thunkAPI) => {
         try {
             const response = await axios.get(`/packages/getTourPackagesByCategory/${category_name}`);
-            console.log(response?.data?.data);
             return response?.data?.data;
         } catch (error) {
             return thunkAPI.rejectWithValue(error.message);
@@ -14,7 +13,7 @@ export const AllPackagesThunk = createAsyncThunk("packages/AllPackages",
     }
 )
 
-const indiaSlice = createSlice({
+const packagesSlice = createSlice({
     name: "India",
     initialState: {
         allPackages: null,
@@ -39,4 +38,4 @@ const indiaSlice = createSlice({
 })
 
 
-export default indiaSlice.reducer;
+export default packagesSlice.reducer;

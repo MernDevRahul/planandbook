@@ -3,6 +3,7 @@ import "./globals.css";
 import Header from "../components/Header";
 import HeaderTwo from "../components/HeaderTwo";
 import { ReduxProvider } from "./redux/Provider";
+import { Toaster } from "sonner";
 
 
 const roboto = Roboto({
@@ -24,6 +25,7 @@ export default function RootLayout({ children }) {
       <link rel="icon" href="/logo/logo.png" sizes="180x180" type="image/png" />
     </head>
       <body className={`${roboto.variable} antialiased pt-[60px] lg:pt-[120px]`}>
+        <Toaster/>
         <ReduxProvider>
           <Header />
           <HeaderTwo />
