@@ -4,6 +4,7 @@ import React, { useEffect, useMemo } from 'react'
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchPlace } from '../redux/features/placeSlice';
 import BannerTwo from 'src/components/BannerTwo';
+import AboutPlace from 'src/components/AboutPlace';
 
 const Main = () => {
   const { loading, place } = useSelector((state)=>state.place);
@@ -18,11 +19,12 @@ const Main = () => {
   const imageUrl = `http://localhost:6544/${place?.banner[0]?.replace(/\\/g, "/")}`;
   console.log(imageUrl); // Ensure the image URL is correct
   return (
-    <div className='relative w-full h-[40vh] lg:h-[80vh] sm:mt-[60px] md:mt-[60px] lg:mt-[120px] text-black/60'>
-      <BannerTwo heading={`Himachal Tour Packages ${new Date().getFullYear()} Book Your Trip Now!`}
-      subHeading="Discover Himachal's Finest: Shimla, Manali & Kasol"
+    <div className='relative w-full h-[40vh] lg:h-[80vh] sm:mt-[60px] md:mt-[60px] lg:mt-[120px] text-black/60 bg-white'>
+      <BannerTwo heading={`${place?.heading}`}
+      subHeading={`${place?.subheading}`}
       image={imageUrl}
       />
+      <AboutPlace title={`About ${place?.name} Tour Packages India!`}/>
     </div>
   )
 }

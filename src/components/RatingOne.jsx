@@ -9,7 +9,7 @@ const RatingOne = () => {
         <div className="flex items-center gap-2 text-center">
           <img src="/png/google.png" alt="Google" className="w-6 sm:w-8 md:w-10" />
           <div className="leading-tight">
-            <p className="font-bold text-xs sm:text-sm md:text-xl">⭐ 4.9</p>
+            <p className="font-bold text-xs sm:text-sm md:text-xl text-gray-700">⭐ 4.9</p>
             <p className="text-[10px] sm:text-xs md:text-sm text-gray-700">
               (13650 reviews)
             </p>
@@ -20,7 +20,7 @@ const RatingOne = () => {
         <div className="flex items-center gap-2 text-center">
           <img src="/png/tripadvisor.png" alt="TripAdvisor" className="w-6 sm:w-8 md:w-10" />
           <div className="leading-tight">
-            <p className="font-bold text-xs sm:text-sm md:text-xl">⭐ 5.0</p>
+            <p className="font-bold text-xs sm:text-sm md:text-xl text-gray-700">⭐ 5.0</p>
             <p className="text-[10px] sm:text-xs md:text-sm text-gray-700">
               (3770 reviews)
             </p>
@@ -35,7 +35,7 @@ const RatingOne = () => {
             className="w-6 sm:w-8 md:w-10"
           />
           <div className="leading-tight">
-            <p className="font-bold text-xs sm:text-sm md:text-xl">⭐ 4.9</p>
+            <p className="font-bold text-xs sm:text-sm md:text-xl text-gray-700">⭐ 4.9</p>
             <p className="text-[10px] sm:text-xs md:text-sm text-gray-700">
               (1031 reviews)
             </p>

@@ -96,3 +96,22 @@ body {
   border-color: var(--primary); /* checkmark color */
   opacity: 1;
 }
+
+
+/* Default text */
+.collapse input:not(:checked) ~ .collapse-title .read-toggle::after {
+  content: "Read";
+  background-color: var(--primary);
+  padding: 10 20;
+  border-radius: 5px;
+  color: white;
+}
+
+/* When open */
+.collapse input:checked ~ .collapse-title .read-toggle::after {
+  content: "Read less";
+  background-color: var(--primary);
+  padding: 10 20;
+  border-radius: 5px;
+  color: white;
+}
