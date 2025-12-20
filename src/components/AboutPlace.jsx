@@ -6,7 +6,7 @@ const content = `
 
 const AboutPlace = ({title}) => {
   return (
-    <div className='bg-white w-full md:px-[100px] lg:px-20 2xl:px-[260px] lg:py-5'>
+    <div className='bg-white w-full md:px-25 lg:px-20 2xl:px-65 lg:py-5'>
 <div className="collapse bg-gray-100 shadow-lg border border-gray-200">
   <input type="checkbox" />
 

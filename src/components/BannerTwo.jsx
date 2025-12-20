@@ -5,7 +5,7 @@ const BannerTwo = ({ heading, subHeading, image}) => {
   console.log(image)
   return (
     <>
-    { image !== undefined && <div className='relative w-full h-[60vh] lg:h-[calc(100vh-120px)] sm:mt-[60px] md:mt-[60px] lg:mt-[120px]'>
+    { image !== undefined && <div className='relative w-full h-[60vh] lg:h-[calc(100vh-120px)] sm:mt-15 md:mt-15 lg:mt-30'>
       <Image
       src={image}
       alt='Banner Image'
