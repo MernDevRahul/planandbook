@@ -2,7 +2,7 @@
 import { CalendarSearch, Clock, Plane } from "lucide-react";
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { toast } from "sonner";
+// import { toast } from "sonner";
 import { AllPackagesThunk } from "src/app/redux/features/packageSlice";
 
 const data = {
@@ -27,11 +27,11 @@ const AllPackages = () => {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    toast.success("Loading all packages...",{
-      duration: 1000,
-      position: "bottom-right",
-      style: { background: "var(--primary)", color: "white" },
-    })
+    // toast.success("Loading all packages...",{
+    //   duration: 1000,
+    //   position: "bottom-right",
+    //   style: { background: "var(--primary)", color: "white" },
+    // })
     const data = async () => {
       await dispatch(AllPackagesThunk("India-Trips"));
     };

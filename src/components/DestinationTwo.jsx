@@ -2,7 +2,7 @@
 import Link from "next/link";
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { toast } from "sonner";
+// import { toast } from "sonner";
 import { AllDestinationsByCategoryThunk } from "src/app/redux/features/destinationsSlice";
 
 const DestinationTwo = ({ catergory }) => {
@@ -12,11 +12,11 @@ const DestinationTwo = ({ catergory }) => {
   );
   const dispatch = useDispatch();
   useEffect(() => {
-    toast.success("Loading all packages...",{
-      duration: 1000,
-      position: "bottom-right",
-      style: { background: "var(--primary)", color: "white" },
-    })
+    // toast.success("Loading all packages...",{
+    //   duration: 1000,
+    //   position: "bottom-right",
+    //   style: { background: "var(--primary)", color: "white" },
+    // })
     try {
       const data = async () => {
         await dispatch(AllDestinationsByCategoryThunk(catergory));
@@ -28,7 +28,9 @@ const DestinationTwo = ({ catergory }) => {
   }, [dispatch]);
   return (
     <>
-      <div className="flex flex-col flex-start items-center mt-[30px] mb-5 lg:mt-[70px] lg:mb-[30px]">
+      { AllDestinationsByCategory && (
+        <>
+        <div className="flex flex-col flex-start items-center mt-[30px] mb-5 lg:mt-[70px] lg:mb-[30px]">
         <h2 className="xl:mb-2 text-(--primary) text-2xl lg:text-5xl font-bold lg:leading-[47px] text-shadow-md text-shadow-black/35">
           All Destinations
         </h2>
@@ -60,6 +62,8 @@ const DestinationTwo = ({ catergory }) => {
           </Link>
         ))}
       </div>
+        </>
+      )}
     </>
   );
 };
